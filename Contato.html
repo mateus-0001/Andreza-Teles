@@ -1,0 +1,4018 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato | Andreza Teles - Consultoria em Gestão, Carreira e Negócios</title>
+<meta name="description" content="Fale com Andreza Teles pelo WhatsApp, telefone, e-mail, redes sociais ou pelo formulário de contato.">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<style>
+.elementor-location-header {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: transparent !important;
+}
+
+.elementor-location-header > .e-con,
+.elementor-location-header > .elementor-element,
+.elementor-location-header .elementor-widget-html,
+.elementor-location-header .elementor-widget-html > .elementor-widget-container {
+  background: transparent !important;
+}
+
+.wdh-nav-wrapper {
+  --wdh-azul: #1d3fd6;
+  --wdh-navy: #16205c;
+  --wdh-navy-escuro: #0f1740;
+  --wdh-preto: #1a1b22;
+  --wdh-cinza: #6f7380;
+  --wdh-fundo-vidro: rgba(255, 255, 255, 0.46);
+  --wdh-fonte: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --wdh-fonte-serif: "Playfair Display", Georgia, serif;
+
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  padding: 20px 24px 0;
+  box-sizing: border-box;
+  font-family: var(--wdh-fonte);
+}
+
+.wdh-nav-wrapper *,
+.wdh-nav-wrapper *::before,
+.wdh-nav-wrapper *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wdh-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 14px 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.64);
+  border-radius: 999px;
+  background: var(--wdh-fundo-vidro);
+  -webkit-backdrop-filter: blur(18px) saturate(125%);
+  backdrop-filter: blur(18px) saturate(125%);
+  box-shadow: 0 8px 30px rgba(20, 30, 90, 0.09), inset 0 1px 0 rgba(255, 255, 255, 0.30);
+}
+
+
+.wdh-nav {
+  opacity: 0;
+  transform: translateY(-16px) scale(.992);
+  animation: wdh-nav-enter .72s cubic-bezier(.22,.75,.24,1) .05s both;
+  transition:
+    transform .28s ease,
+    background-color .28s ease,
+    border-color .28s ease,
+    box-shadow .28s ease;
+}
+
+.wdh-nav-logo {
+  opacity: 0;
+  transform: translateY(-8px);
+  animation: wdh-logo-enter .62s cubic-bezier(.22,.75,.24,1) .20s both;
+}
+
+.wdh-nav-links li {
+  opacity: 0;
+  transform: translateY(-8px);
+  animation: wdh-link-enter .56s cubic-bezier(.22,.75,.24,1) both;
+}
+
+.wdh-nav-links li:nth-child(1) { animation-delay: .28s; }
+.wdh-nav-links li:nth-child(2) { animation-delay: .34s; }
+.wdh-nav-links li:nth-child(3) { animation-delay: .40s; }
+.wdh-nav-links li:nth-child(4) { animation-delay: .46s; }
+.wdh-nav-links li:nth-child(5) { animation-delay: .52s; }
+
+.wdh-nav > .wdh-nav-btn {
+  opacity: 0;
+  transform: translateY(-8px) scale(.975);
+  animation: wdh-cta-enter .64s cubic-bezier(.2,.8,.2,1.08) .58s both;
+}
+
+.wdh-nav-toggle {
+  opacity: 0;
+  transform: translateY(-6px) scale(.96);
+  animation: wdh-toggle-enter .58s cubic-bezier(.2,.8,.2,1.08) .30s both;
+}
+
+@keyframes wdh-nav-enter {
+  from { opacity: 0; transform: translateY(-16px) scale(.992); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes wdh-logo-enter {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes wdh-link-enter {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes wdh-cta-enter {
+  from { opacity: 0; transform: translateY(-8px) scale(.975); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes wdh-toggle-enter {
+  from { opacity: 0; transform: translateY(-6px) scale(.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .wdh-nav,
+  .wdh-nav-mobile {
+    background: rgba(255, 255, 255, 0.92);
+  }
+}
+
+.wdh-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: var(--wdh-preto) !important;
+  text-decoration: none !important;
+  transition: transform .25s ease;
+}
+
+.wdh-logo-image {
+  display: block;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  object-fit: contain;
+  transition: transform .28s ease, filter .28s ease;
+}
+
+.wdh-nav-logo-text {
+  display: flex;
+  flex-direction: column;
+  color: var(--wdh-preto);
+  font-family: var(--wdh-fonte-serif);
+  font-size: 19px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.wdh-nav-logo-text small {
+  margin-top: 2px;
+  color: var(--wdh-cinza);
+  font-family: var(--wdh-fonte);
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+}
+
+.wdh-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 30px;
+  list-style: none;
+}
+
+.wdh-nav-links a {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+  color: var(--wdh-preto) !important;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.25;
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.wdh-nav-links a:hover,
+.wdh-nav-links a.wdh-current {
+  color: var(--wdh-azul) !important;
+}
+
+.wdh-nav-links a.wdh-current {
+  font-weight: 600;
+}
+
+.wdh-nav-links a.wdh-current::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--wdh-azul);
+}
+
+.wdh-nav-btn,
+.wdh-nav-btn:visited,
+.wdh-nav-btn:focus,
+.wdh-nav-btn:active {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-shrink: 0;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--wdh-navy), var(--wdh-navy-escuro));
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.wdh-nav-btn:hover {
+  color: #fff !important;
+  transform: translateY(-1px);
+  filter: brightness(1.12);
+  box-shadow: 0 8px 18px rgba(15, 23, 64, 0.32);
+}
+
+.wdh-nav-btn:focus-visible,
+.wdh-nav-logo:focus-visible,
+.wdh-nav-links a:focus-visible,
+.wdh-nav-mobile a:focus-visible,
+.wdh-nav-toggle:focus-visible {
+  outline: 3px solid rgba(29, 63, 214, 0.22);
+  outline-offset: 3px;
+}
+
+.wdh-nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.70);
+  cursor: pointer;
+}
+
+.wdh-nav-toggle span {
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--wdh-preto);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.wdh-nav-toggle.wdh-active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.wdh-nav-toggle.wdh-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.wdh-nav-toggle.wdh-active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.wdh-nav-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  max-width: 1400px;
+  max-height: 0;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  background: var(--wdh-fundo-vidro);
+  -webkit-backdrop-filter: blur(18px) saturate(125%);
+  backdrop-filter: blur(18px) saturate(125%);
+  box-shadow: 0 12px 32px rgba(20, 30, 90, 0.10);
+  transform: translateY(-5px);
+  transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.25s ease, padding 0.35s ease, margin-top 0.35s ease, visibility 0.25s ease, border-color 0.25s ease;
+}
+
+.wdh-nav-mobile.wdh-open {
+  max-height: 520px;
+  margin-top: 10px;
+  padding: 14px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  border-color: rgba(255, 255, 255, 0.64);
+  transform: translateY(0);
+}
+
+.wdh-nav-mobile ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.wdh-nav-mobile ul li a {
+  display: block;
+  padding: 13px 12px;
+  border-radius: 12px;
+  color: var(--wdh-preto) !important;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-decoration: none !important;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.wdh-nav-mobile ul li a:hover,
+.wdh-nav-mobile ul li a.wdh-current {
+  background: rgba(29, 63, 214, 0.08);
+  color: var(--wdh-azul) !important;
+}
+
+.wdh-nav-btn-mobile {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px 22px;
+}
+
+
+@media (hover:hover) and (pointer:fine) and (min-width:992px) {
+  .wdh-nav:hover {
+    transform: translateY(-1px);
+    background: rgba(255,255,255,.52);
+    border-color: rgba(255,255,255,.78);
+    box-shadow:
+      0 12px 34px rgba(20,30,90,.13),
+      inset 0 1px 0 rgba(255,255,255,.38);
+  }
+
+  .wdh-nav-logo:hover {
+    transform: translateY(-1px);
+  }
+
+  .wdh-nav-logo:hover .wdh-logo-image {
+    transform: scale(1.055);
+    filter: drop-shadow(0 4px 8px rgba(29,63,214,.12));
+  }
+
+  .wdh-nav-links a:hover {
+    transform: translateY(-2px);
+  }
+
+  .wdh-nav-links a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--wdh-azul);
+    opacity: .45;
+    transform: translateX(-50%);
+    transition: width .22s ease, opacity .22s ease;
+  }
+
+  .wdh-nav-links a:hover::before {
+    width: 100%;
+    opacity: .65;
+  }
+
+  .wdh-nav-links a.wdh-current::before {
+    display: none;
+  }
+
+  .wdh-nav-btn:hover {
+    transform: translateY(-2px) scale(1.015);
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .wdh-nav-wrapper {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .wdh-nav {
+    gap: 12px;
+    padding: 8px 10px 8px 16px;
+  }
+
+  .wdh-nav-logo-text {
+    font-size: 16px;
+  }
+
+  .wdh-nav-logo-text small {
+    display: none;
+  }
+
+  .wdh-nav-links {
+    gap: 18px;
+  }
+
+  .wdh-nav-links a {
+    font-size: 14px;
+  }
+
+  .wdh-nav-btn {
+    padding: 11px 16px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wdh-nav-wrapper {
+    padding: 14px 16px 0;
+  }
+
+  .wdh-nav {
+    gap: 12px;
+    padding: 8px 8px 8px 14px;
+  }
+
+  .wdh-nav-logo-text {
+    font-size: 15px;
+  }
+
+  .wdh-nav-logo-text small {
+    display: none;
+  }
+
+  .wdh-nav-links,
+  .wdh-nav > .wdh-nav-btn {
+    display: none;
+  }
+
+  .wdh-nav-toggle,
+  .wdh-nav-mobile {
+    display: flex;
+  }
+}
+
+@media (max-width: 370px) {
+  .wdh-nav-logo-text {
+    font-size: 14px;
+  }
+
+  .wdh-logo-image {
+    width: 31px;
+    height: 31px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wdh-nav,
+  .wdh-nav-logo,
+  .wdh-nav-links li,
+  .wdh-nav > .wdh-nav-btn,
+  .wdh-nav-toggle {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .wdh-nav-btn,
+  .wdh-nav-links a,
+  .wdh-nav-logo,
+  .wdh-logo-image,
+  .wdh-nav-mobile,
+  .wdh-nav-mobile a,
+  .wdh-nav-toggle span {
+    transition: none !important;
+  }
+}
+</style>
+
+<header class="wdh-nav-wrapper">
+  <nav class="wdh-nav" aria-label="Navegação principal">
+    <a href="/Home/" class="wdh-nav-logo" aria-label="Andreza Teles - Página inicial">
+      <img
+        src="http://andreza-teles.local/wp-content/uploads/2026/06/Design-sem-nome.png"
+        alt="Andreza Teles"
+        class="wdh-logo-image"
+        decoding="async"
+        fetchpriority="high"
+      >
+      <span class="wdh-nav-logo-text">
+        ANDREZA TELES
+        <small>Gestão • Carreira • Negócios</small>
+      </span>
+    </a>
+
+    <ul class="wdh-nav-links">
+      <li><a href="/Home/">Home</a></li>
+      <li><a href="/Sobre/">Sobre</a></li>
+      <li><a href="/Serviços/">Serviços</a></li>
+      <li><a href="/Cursos/">Cursos</a></li>
+      <li><a href="/Contato/" class="wdh-current">Contato</a></li>
+    </ul>
+
+    <a href="https://wa.me/5583993767046?text=Ola" class="wdh-nav-btn" target="_blank" rel="noopener noreferrer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.5 1.34 5.02L2 22l5.13-1.35a9.96 9.96 0 0 0 4.91 1.28h.01c5.52 0 10-4.48 10-10s-4.48-9.93-10.01-9.93zm0 18.14a8.1 8.1 0 0 1-4.15-1.14l-.3-.18-3.05.8.81-2.97-.2-.3a8.13 8.13 0 0 1-1.25-4.35c0-4.49 3.66-8.14 8.15-8.14 4.48 0 8.14 3.65 8.14 8.14 0 4.49-3.66 8.14-8.15 8.14zm4.47-6.1c-.24-.12-1.45-.72-1.68-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.78.96-.14.16-.29.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.8-.2-.48-.4-.42-.55-.42-.14 0-.31-.02-.47-.02s-.43.06-.66.31c-.22.24-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.55.1.47-.07 1.45-.59 1.66-1.17.2-.57.2-1.06.14-1.17-.06-.1-.22-.16-.47-.28z"/>
+      </svg>
+      Agendar uma conversa
+    </a>
+
+    <button class="wdh-nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="wdh-nav-mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <div class="wdh-nav-mobile" id="wdh-nav-mobile-menu">
+    <ul>
+      <li><a href="/Home/">Home</a></li>
+      <li><a href="/Sobre/">Sobre</a></li>
+      <li><a href="/Serviços/">Serviços</a></li>
+      <li><a href="/Cursos/">Cursos</a></li>
+      <li><a href="/Contato/" class="wdh-current">Contato</a></li>
+    </ul>
+
+    <a href="https://wa.me/5583993767046?text=Ola" class="wdh-nav-btn wdh-nav-btn-mobile" target="_blank" rel="noopener noreferrer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.5 1.34 5.02L2 22l5.13-1.35a9.96 9.96 0 0 0 4.91 1.28h.01c5.52 0 10-4.48 10-10s-4.48-9.93-10.01-9.93zm0 18.14a8.1 8.1 0 0 1-4.15-1.14l-.3-.18-3.05.8.81-2.97-.2-.3a8.13 8.13 0 0 1-1.25-4.35c0-4.49 3.66-8.14 8.15-8.14 4.48 0 8.14 3.65 8.14 8.14 0 4.49-3.66 8.14-8.15 8.14zm4.47-6.1c-.24-.12-1.45-.72-1.68-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.78.96-.14.16-.29.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.8-.2-.48-.4-.42-.55-.42-.14 0-.31-.02-.47-.02s-.43.06-.66.31c-.22.24-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.55.1.47-.07 1.45-.59 1.66-1.17.2-.57.2-1.06.14-1.17-.06-.1-.22-.16-.47-.28z"/>
+      </svg>
+      Agendar uma conversa
+    </a>
+  </div>
+</header>
+
+<script>
+(function () {
+  "use strict";
+
+  const header = document.querySelector(".wdh-nav-wrapper");
+
+  if (!header || header.dataset.wdhReady === "true") {
+    return;
+  }
+
+  header.dataset.wdhReady = "true";
+
+  const toggle = header.querySelector(".wdh-nav-toggle");
+  const mobile = header.querySelector(".wdh-nav-mobile");
+  const mobileLinks = mobile ? mobile.querySelectorAll("a") : [];
+
+  function fecharMenu() {
+    if (!toggle || !mobile) {
+      return;
+    }
+
+    toggle.classList.remove("wdh-active");
+    mobile.classList.remove("wdh-open");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Abrir menu");
+  }
+
+  function alternarMenu() {
+    if (!toggle || !mobile) {
+      return;
+    }
+
+    const aberto = mobile.classList.toggle("wdh-open");
+    toggle.classList.toggle("wdh-active", aberto);
+    toggle.setAttribute("aria-expanded", aberto ? "true" : "false");
+    toggle.setAttribute("aria-label", aberto ? "Fechar menu" : "Abrir menu");
+  }
+
+  if (toggle && mobile) {
+    toggle.addEventListener("click", alternarMenu);
+
+    mobileLinks.forEach(function (link) {
+      link.addEventListener("click", fecharMenu);
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        fecharMenu();
+      }
+    });
+
+    document.addEventListener("click", function (event) {
+      if (!header.contains(event.target)) {
+        fecharMenu();
+      }
+    });
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 767) {
+        fecharMenu();
+      }
+    }, { passive: true });
+  }
+})();
+</script>
+
+<!-- ===================== 1. CONTATO (HERO) ===================== -->
+<style>
+.wct-hero {
+  --wct-azul: #1d3fd6;
+  --wct-tinta: #14151a;
+  --wct-cinza: #6b7280;
+  --wct-fonte: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --wct-fonte-serif: Georgia, "Times New Roman", serif;
+
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding: 72px 24px 56px;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f8faff 58%, #fbfcff 100%);
+  color: var(--wct-tinta);
+  font-family: var(--wct-fonte);
+  box-sizing: border-box;
+}
+
+.wct-hero *,
+.wct-hero *::before,
+.wct-hero *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wct-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(rgba(29,63,214,.10) 1px, transparent 1px);
+  background-size: 26px 26px;
+  -webkit-mask-image:
+    radial-gradient(ellipse 78% 66% at 50% 28%, #000 30%, transparent 88%);
+  mask-image:
+    radial-gradient(ellipse 78% 66% at 50% 28%, #000 30%, transparent 88%);
+  opacity: .46;
+}
+
+.wct-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  contain: paint;
+}
+
+.wct-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(82px);
+  opacity: .26;
+  animation-play-state: paused;
+  will-change: transform;
+}
+
+.wct-hero.wct-nearview .wct-blob,
+.wct-hero.wct-nearview .wct-particle,
+.wct-hero.wct-nearview .wct-light {
+  animation-play-state: running;
+}
+
+.wct-blob-1 {
+  width: 500px;
+  height: 420px;
+  top: -210px;
+  left: -160px;
+  background:
+    radial-gradient(ellipse, rgba(29,63,214,.36), transparent 72%);
+  animation: wct-float-1 17s ease-in-out infinite alternate;
+}
+
+.wct-blob-2 {
+  width: 470px;
+  height: 390px;
+  top: -180px;
+  right: -160px;
+  background:
+    radial-gradient(ellipse, rgba(124,58,237,.28), transparent 72%);
+  animation: wct-float-2 21s ease-in-out infinite alternate;
+}
+
+.wct-light {
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  width: 38%;
+  height: 160%;
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    rgba(255,255,255,0) 24%,
+    rgba(255,255,255,.54) 49%,
+    rgba(188,202,255,.16) 58%,
+    rgba(255,255,255,0) 76%,
+    transparent 100%
+  );
+  filter: blur(30px);
+  opacity: 0;
+  transform: translate3d(-20%,0,0) skewX(-10deg);
+  animation: wct-light-pass 15s ease-in-out infinite;
+  animation-play-state: paused;
+  will-change: transform, opacity;
+}
+
+@keyframes wct-float-1 {
+  from {
+    transform: translate3d(-15px,-8px,0) scale(1);
+  }
+  to {
+    transform: translate3d(135px,82px,0) scale(1.16);
+  }
+}
+
+@keyframes wct-float-2 {
+  from {
+    transform: translate3d(22px,-10px,0) scale(1);
+  }
+  to {
+    transform: translate3d(-120px,76px,0) scale(1.13);
+  }
+}
+
+@keyframes wct-light-pass {
+  0% {
+    transform: translate3d(-25%,0,0) skewX(-10deg);
+    opacity: 0;
+  }
+  18% {
+    opacity: .46;
+  }
+  55% {
+    opacity: .28;
+  }
+  82% {
+    opacity: .40;
+  }
+  100% {
+    transform: translate3d(340%,0,0) skewX(-10deg);
+    opacity: 0;
+  }
+}
+
+.wct-particle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--wct-azul);
+  opacity: .24;
+  animation: wct-drift 10s ease-in-out infinite;
+  animation-play-state: paused;
+  will-change: transform, opacity;
+}
+
+@keyframes wct-drift {
+  0%,
+  100% {
+    transform: translate3d(0,0,0) scale(1);
+    opacity: .12;
+  }
+  50% {
+    transform: translate3d(14px,-20px,0) scale(1.45);
+    opacity: .34;
+  }
+}
+
+.wct-hero-container {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wct-eyebrow,
+.wct-hero-title,
+.wct-hero-desc {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.wct-eyebrow {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--wct-azul);
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.wct-hero-title {
+  margin-bottom: 16px;
+  font-family: var(--wct-fonte-serif);
+  font-size: clamp(28px,3.8vw,40px);
+  font-weight: 400;
+  line-height: 1.3;
+  text-wrap: balance;
+}
+
+.wct-hero-title em {
+  position: relative;
+  color: var(--wct-azul);
+  font-style: italic;
+}
+
+.wct-hero-title em::after {
+  content: "";
+  position: absolute;
+  left: 3%;
+  right: 1%;
+  bottom: -4px;
+  height: 5px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    rgba(29,63,214,.05),
+    rgba(29,63,214,.24),
+    rgba(124,58,237,.10)
+  );
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+.wct-hero-desc {
+  color: var(--wct-cinza);
+  font-size: 16px;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.wct-item-in-down {
+  animation: wct-item-enter-down .88s cubic-bezier(.16,1,.3,1) var(--wct-delay,0ms) both !important;
+}
+
+.wct-item-in-up {
+  animation: wct-item-enter-up .88s cubic-bezier(.16,1,.3,1) var(--wct-delay,0ms) both !important;
+}
+
+.wct-item-out-down {
+  animation: wct-item-exit-up .48s cubic-bezier(.4,0,.6,1) both !important;
+}
+
+.wct-item-out-up {
+  animation: wct-item-exit-down .48s cubic-bezier(.4,0,.6,1) both !important;
+}
+
+@keyframes wct-item-enter-down {
+  from {
+    opacity: 0;
+    visibility: visible;
+    transform: translate3d(0,-25px,0);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0,0,0);
+  }
+}
+
+@keyframes wct-item-enter-up {
+  from {
+    opacity: 0;
+    visibility: visible;
+    transform: translate3d(0,25px,0);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0,0,0);
+  }
+}
+
+@keyframes wct-item-exit-up {
+  from {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0,0,0);
+  }
+  to {
+    opacity: 0;
+    visibility: visible;
+    transform: translate3d(0,-18px,0);
+  }
+}
+
+@keyframes wct-item-exit-down {
+  from {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0,0,0);
+  }
+  to {
+    opacity: 0;
+    visibility: visible;
+    transform: translate3d(0,18px,0);
+  }
+}
+
+.wct-hero-title.wct-item-in-down em::after,
+.wct-hero-title.wct-item-in-up em::after {
+  animation: wct-title-line .92s cubic-bezier(.16,1,.3,1) .42s forwards;
+}
+
+@keyframes wct-title-line {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width:599px) {
+  .wct-hero {
+    padding: 48px 20px 40px;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .wct-blob,
+  .wct-particle,
+  .wct-light {
+    animation: none !important;
+  }
+
+  .wct-eyebrow,
+  .wct-hero-title,
+  .wct-hero-desc,
+  .wct-item-in-down,
+  .wct-item-in-up,
+  .wct-item-out-down,
+  .wct-item-out-up {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .wct-hero-title em::after {
+    transform: scaleX(1) !important;
+    animation: none !important;
+  }
+}
+</style>
+
+<section class="wct-hero">
+  <div class="wct-hero-bg" aria-hidden="true">
+    <span class="wct-blob wct-blob-1"></span>
+    <span class="wct-blob wct-blob-2"></span>
+    <span class="wct-light"></span>
+
+    <span class="wct-particle" style="left:8%; top:24%; animation-delay:0s;"></span>
+    <span class="wct-particle" style="left:88%; top:20%; animation-delay:-3s;"></span>
+    <span class="wct-particle" style="left:18%; top:72%; animation-delay:-6s;"></span>
+    <span class="wct-particle" style="left:92%; top:66%; animation-delay:-2s;"></span>
+  </div>
+
+  <div class="wct-hero-container">
+    <span class="wct-eyebrow">Contato</span>
+
+    <h1 class="wct-hero-title">
+      Vamos conversar sobre o seu <em>próximo passo?</em>
+    </h1>
+
+    <p class="wct-hero-desc">
+      Escolha o canal que preferir — WhatsApp, e-mail, redes sociais ou o formulário abaixo. A resposta costuma ser rápida.
+    </p>
+  </div>
+</section>
+
+<noscript>
+<style>
+.wct-hero .wct-eyebrow,
+.wct-hero .wct-hero-title,
+.wct-hero .wct-hero-desc {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+</style>
+</noscript>
+
+<script>
+(function () {
+  "use strict";
+
+  var sections = Array.prototype.slice.call(
+    document.querySelectorAll(".wct-hero")
+  );
+
+  if (!sections.length) return;
+
+  var reduceMotion =
+    window.matchMedia &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  var lastY =
+    window.scrollY ||
+    window.pageYOffset ||
+    0;
+
+  var direction = "down";
+  var ticking = false;
+
+  function getItems(section) {
+    return [
+      section.querySelector(".wct-eyebrow"),
+      section.querySelector(".wct-hero-title"),
+      section.querySelector(".wct-hero-desc")
+    ].filter(Boolean);
+  }
+
+  function setupNearview(section) {
+    if (
+      reduceMotion ||
+      !("IntersectionObserver" in window)
+    ) {
+      section.classList.add("wct-nearview");
+      return;
+    }
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          section.classList.toggle(
+            "wct-nearview",
+            entry.isIntersecting
+          );
+        });
+      },
+      {
+        rootMargin: "240px 0px 240px 0px",
+        threshold: 0
+      }
+    );
+
+    observer.observe(section);
+  }
+
+  function clearState(item) {
+    item.classList.remove(
+      "wct-item-in-down",
+      "wct-item-in-up",
+      "wct-item-out-down",
+      "wct-item-out-up"
+    );
+  }
+
+  function playIn(item, dir, delay) {
+    clearState(item);
+
+    item.style.setProperty(
+      "--wct-delay",
+      delay + "ms"
+    );
+
+    void item.offsetWidth;
+
+    item.classList.add(
+      dir === "up"
+        ? "wct-item-in-up"
+        : "wct-item-in-down"
+    );
+
+    item.dataset.wctState = "in";
+  }
+
+  function playOut(item, dir) {
+    clearState(item);
+
+    void item.offsetWidth;
+
+    item.classList.add(
+      dir === "up"
+        ? "wct-item-out-up"
+        : "wct-item-out-down"
+    );
+
+    item.dataset.wctState = "out";
+  }
+
+  function update() {
+    ticking = false;
+
+    if (reduceMotion) return;
+
+    var vh =
+      window.innerHeight ||
+      document.documentElement.clientHeight;
+
+    sections.forEach(function (section) {
+      var items = getItems(section);
+
+      items.forEach(function (item, index) {
+        var rect = item.getBoundingClientRect();
+
+        var state =
+          item.dataset.wctState ||
+          "idle";
+
+        var visible =
+          rect.bottom > 0 &&
+          rect.top < vh;
+
+        var entersDown =
+          rect.top <= vh * .96 &&
+          rect.bottom > 0;
+
+        var entersUp =
+          rect.bottom >= vh * .04 &&
+          rect.top < vh;
+
+        if (direction === "down") {
+          if (
+            entersDown &&
+            state !== "in"
+          ) {
+            playIn(
+              item,
+              "down",
+              index * 125
+            );
+            return;
+          }
+
+          if (
+            !visible &&
+            rect.bottom <= 0 &&
+            state === "in"
+          ) {
+            playOut(
+              item,
+              "down"
+            );
+            return;
+          }
+
+          if (
+            !visible &&
+            rect.top >= vh &&
+            state === "out"
+          ) {
+            clearState(item);
+            item.dataset.wctState = "idle";
+          }
+        } else {
+          if (
+            entersUp &&
+            state !== "in"
+          ) {
+            playIn(
+              item,
+              "up",
+              (items.length - 1 - index) * 125
+            );
+            return;
+          }
+
+          if (
+            !visible &&
+            rect.top >= vh &&
+            state === "in"
+          ) {
+            playOut(
+              item,
+              "up"
+            );
+            return;
+          }
+
+          if (
+            !visible &&
+            rect.bottom <= 0 &&
+            state === "out"
+          ) {
+            clearState(item);
+            item.dataset.wctState = "idle";
+          }
+        }
+      });
+    });
+  }
+
+  function requestUpdate() {
+    if (ticking) return;
+
+    ticking = true;
+    requestAnimationFrame(update);
+  }
+
+  function onScroll() {
+    var currentY =
+      window.scrollY ||
+      window.pageYOffset ||
+      0;
+
+    var delta =
+      currentY - lastY;
+
+    if (Math.abs(delta) > 1) {
+      direction =
+        delta > 0
+          ? "down"
+          : "up";
+    }
+
+    lastY = currentY;
+    requestUpdate();
+  }
+
+  sections.forEach(function (section) {
+    setupNearview(section);
+
+    getItems(section).forEach(function (item) {
+      item.dataset.wctState = "idle";
+    });
+
+    if (reduceMotion) {
+      section.classList.add("wct-nearview");
+
+      getItems(section).forEach(function (item) {
+        item.style.opacity = "1";
+        item.style.visibility = "visible";
+        item.style.transform = "none";
+      });
+    }
+  });
+
+  if (reduceMotion) return;
+
+  update();
+
+  window.addEventListener(
+    "scroll",
+    onScroll,
+    { passive: true }
+  );
+
+  window.addEventListener(
+    "resize",
+    requestUpdate,
+    { passive: true }
+  );
+})();
+</script>
+<!-- ===================== 2. ONDE ME ENCONTRAR ===================== -->
+<style>
+.wct-channels {
+  --wct-azul: #1d3fd6;
+  --wct-tinta: #14151a;
+  --wct-fonte: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --wct-fonte-serif: Georgia, "Times New Roman", serif;
+
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding: 80px 24px;
+  background:
+    linear-gradient(160deg, #0b1024 0%, #0f1730 52%, #131d42 100%);
+  color: var(--wct-tinta);
+  font-family: var(--wct-fonte);
+  box-sizing: border-box;
+}
+
+.wct-channels *,
+.wct-channels *::before,
+.wct-channels *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wct-channels::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(ellipse 88% 78% at 50% 48%, #000 32%, transparent 92%);
+  mask-image: radial-gradient(ellipse 88% 78% at 50% 48%, #000 32%, transparent 92%);
+}
+
+.wct-channels-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  contain: paint;
+}
+
+.wct-channels-blob,
+.wct-channels-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(82px);
+  animation-play-state: paused;
+  will-change: transform;
+}
+
+.wct-channels.wct-nearview .wct-channels-blob,
+.wct-channels.wct-nearview .wct-channels-glow,
+.wct-channels.wct-nearview .wct-channels-light {
+  animation-play-state: running;
+}
+
+.wct-channels-blob-1 {
+  width: 500px;
+  height: 500px;
+  top: -190px;
+  left: -150px;
+  opacity: .42;
+  background: radial-gradient(circle, rgba(29,63,214,.58), transparent 70%);
+  animation: wct-channels-float-1 16s ease-in-out infinite alternate;
+}
+
+.wct-channels-blob-2 {
+  width: 470px;
+  height: 470px;
+  right: -150px;
+  bottom: -190px;
+  opacity: .38;
+  background: radial-gradient(circle, rgba(124,58,237,.52), transparent 70%);
+  animation: wct-channels-float-2 20s ease-in-out infinite alternate;
+}
+
+.wct-channels-glow {
+  width: 380px;
+  height: 300px;
+  left: 42%;
+  top: 24%;
+  opacity: .14;
+  background: radial-gradient(ellipse, rgba(83,203,255,.8), transparent 72%);
+  animation: wct-channels-float-3 23s ease-in-out infinite alternate;
+}
+
+.wct-channels-light {
+  position: absolute;
+  top: -32%;
+  left: -34%;
+  width: 40%;
+  height: 170%;
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    rgba(255,255,255,0) 25%,
+    rgba(255,255,255,.12) 48%,
+    rgba(129,151,255,.10) 57%,
+    rgba(255,255,255,0) 76%,
+    transparent 100%
+  );
+  filter: blur(30px);
+  opacity: 0;
+  transform: translate3d(-22%,0,0) skewX(-10deg);
+  animation: wct-channels-light-pass 14s ease-in-out infinite;
+  animation-play-state: paused;
+  will-change: transform, opacity;
+}
+
+@keyframes wct-channels-float-1 {
+  from {
+    transform: translate3d(-20px,-10px,0) scale(1);
+  }
+  to {
+    transform: translate3d(150px,95px,0) scale(1.18);
+  }
+}
+
+@keyframes wct-channels-float-2 {
+  from {
+    transform: translate3d(25px,20px,0) scale(1);
+  }
+  to {
+    transform: translate3d(-145px,-95px,0) scale(1.17);
+  }
+}
+
+@keyframes wct-channels-float-3 {
+  from {
+    transform: translate3d(-40px,20px,0) scale(1);
+  }
+  to {
+    transform: translate3d(95px,-70px,0) scale(1.22);
+  }
+}
+
+@keyframes wct-channels-light-pass {
+  0% {
+    transform: translate3d(-28%,0,0) skewX(-10deg);
+    opacity: 0;
+  }
+  18% {
+    opacity: .40;
+  }
+  52% {
+    opacity: .23;
+  }
+  80% {
+    opacity: .34;
+  }
+  100% {
+    transform: translate3d(340%,0,0) skewX(-10deg);
+    opacity: 0;
+  }
+}
+
+.wct-channels-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.wct-channels-head {
+  max-width: 560px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.wct-eyebrow-light,
+.wct-channels-title,
+.wct-card,
+.wct-social-label,
+.wct-social-card {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.wct-eyebrow-light {
+  display: block;
+  margin-bottom: 16px;
+  color: #9db2ff;
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.wct-channels-title {
+  color: #fff;
+  font-family: var(--wct-fonte-serif);
+  font-size: clamp(24px,2.8vw,30px);
+  font-weight: 400;
+  line-height: 1.35;
+  text-wrap: balance;
+}
+
+.wct-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 18px;
+  margin-bottom: 48px;
+}
+
+.wct-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 210px;
+  padding: 24px 20px;
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 17px;
+  background:
+    linear-gradient(160deg, rgba(255,255,255,.055), rgba(255,255,255,.025));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.035),
+    0 16px 34px rgba(0,0,0,.08);
+  color: #fff;
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+  transition:
+    transform .28s ease,
+    border-color .28s ease,
+    background .28s ease,
+    box-shadow .28s ease;
+}
+
+.wct-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 15% 10%, rgba(72,105,255,.13), transparent 38%);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.wct-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 0;
+  border-radius: 0 0 999px 0;
+  background: linear-gradient(180deg, #2c55ff, #8c52ff);
+  transition: height .34s cubic-bezier(.16,1,.3,1);
+}
+
+.wct-card-icon {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1d3fd6, #7c3aed);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(29,63,214,.30);
+  transition:
+    transform .28s ease,
+    box-shadow .28s ease;
+}
+
+.wct-card-title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 4px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.wct-card-desc {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 14px;
+  color: rgba(255,255,255,.57);
+  font-size: 13px;
+  line-height: 1.45;
+  word-break: break-word;
+}
+
+.wct-card-cta {
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  color: #a9baff;
+  font-size: 12.5px;
+  font-weight: 700;
+  transition:
+    transform .24s ease,
+    color .24s ease;
+}
+
+.wct-social-row {
+  padding-top: 36px;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+
+.wct-social-label {
+  margin-bottom: 22px;
+  color: rgba(255,255,255,.45);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: .1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wct-social-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.wct-social-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 999px;
+  background: rgba(255,255,255,.04);
+  color: #fff;
+  text-decoration: none;
+  transition:
+    transform .25s ease,
+    border-color .25s ease,
+    background .25s ease,
+    box-shadow .25s ease;
+}
+
+.wct-social-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(29,63,214,.08), rgba(124,58,237,.06));
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+
+.wct-social-icon {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.08);
+  color: #fff;
+  transition:
+    transform .24s ease,
+    background .24s ease;
+}
+
+.wct-social-info {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.wct-social-name {
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+.wct-social-handle {
+  overflow: hidden;
+  color: rgba(255,255,255,.5);
+  font-size: 11.5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wct-channel-item-in-down {
+  animation: wct-channel-enter-down .84s cubic-bezier(.16,1,.3,1) var(--wct-delay,0ms) both !important;
+}
+
+.wct-channel-item-in-up {
+  animation: wct-channel-enter-up .84s cubic-bezier(.16,1,.3,1) var(--wct-delay,0ms) both !important;
+}
+
+.wct-channel-item-out-down {
+  animation: wct-channel-exit-up .46s cubic-bezier(.4,0,.6,1) both !important;
+}
+
+.wct-channel-item-out-up {
+  animation: wct-channel-exit-down .46s cubic-bezier(.4,0,.6,1) both !important;
+}
+
+.wct-card.wct-channel-item-in-down {
+  animation-name: wct-card-in-down !important;
+}
+
+.wct-card.wct-channel-item-in-up {
+  animation-name: wct-card-in-up !important;
+}
+
+.wct-social-card.wct-channel-item-in-down,
+.wct-social-card.wct-channel-item-in-up {
+  animation-duration: .76s;
+}
+
+@keyframes wct-channel-enter-down {
+  from {
+    opacity: 0;
+    visibility: visible;
+    transform: translate3d(0,-24px,0);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0,0,0);
+  }
+}
+
+@keyframes wct-channel-enter-up {
+  from {
+    opacity: 0;
+    visibility: visible;
+    transform: translate3d(0,24px,0);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0,0,0);
+  }
+}
+
+@keyframes wct-card-in-down {
+  from {
+    opacity: 0;
+    visibility: visible;
+    transform: translate3d(0,-28px,0) scale(.975);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0,0,0) scale(1);
+  }
+}
+
+@keyframes wct-card-in-up {
+  from {
+    opacity: 0;
+    visibility: visible;
+    transform: translate3d(0,28px,0) scale(.975);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0,0,0) scale(1);
+  }
+}
+
+@keyframes wct-channel-exit-up {
+  from {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0,0,0);
+  }
+  to {
+    opacity: 0;
+    visibility: visible;
+    transform: translate3d(0,-18px,0);
+  }
+}
+
+@keyframes wct-channel-exit-down {
+  from {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0,0,0);
+  }
+  to {
+    opacity: 0;
+    visibility: visible;
+    transform: translate3d(0,18px,0);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .wct-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(90,116,255,.32);
+    background:
+      linear-gradient(160deg, rgba(255,255,255,.075), rgba(255,255,255,.035));
+    box-shadow:
+      0 22px 40px rgba(0,0,0,.13),
+      0 10px 30px rgba(29,63,214,.08);
+  }
+
+  .wct-card:hover::before {
+    opacity: 1;
+  }
+
+  .wct-card:hover::after {
+    height: 100%;
+  }
+
+  .wct-card:hover .wct-card-icon {
+    transform: translateY(-2px) scale(1.07) rotate(-5deg);
+    box-shadow: 0 12px 24px rgba(29,63,214,.38);
+  }
+
+  .wct-card:hover .wct-card-cta {
+    transform: translateX(4px);
+    color: #c1cdff;
+  }
+
+  .wct-social-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(90,116,255,.32);
+    background: rgba(255,255,255,.065);
+    box-shadow: 0 14px 28px rgba(0,0,0,.08);
+  }
+
+  .wct-social-card:hover::before {
+    opacity: 1;
+  }
+
+  .wct-social-card:hover .wct-social-icon {
+    transform: scale(1.06) rotate(-4deg);
+    background: rgba(255,255,255,.12);
+  }
+}
+
+.wct-card:focus-visible,
+.wct-social-card:focus-visible {
+  outline: 2px solid #9db2ff;
+  outline-offset: 4px;
+}
+
+@media (max-width:900px) {
+  .wct-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .wct-social-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:599px) {
+  .wct-channels {
+    padding: 56px 20px;
+  }
+
+  .wct-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wct-card {
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .wct-channels-blob,
+  .wct-channels-glow,
+  .wct-channels-light {
+    animation: none !important;
+  }
+
+  .wct-eyebrow-light,
+  .wct-channels-title,
+  .wct-card,
+  .wct-social-label,
+  .wct-social-card,
+  .wct-channel-item-in-down,
+  .wct-channel-item-in-up,
+  .wct-channel-item-out-down,
+  .wct-channel-item-out-up {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
+</style>
+
+<section class="wct-channels">
+  <div class="wct-channels-bg" aria-hidden="true">
+    <span class="wct-channels-blob wct-channels-blob-1"></span>
+    <span class="wct-channels-blob wct-channels-blob-2"></span>
+    <span class="wct-channels-glow"></span>
+    <span class="wct-channels-light"></span>
+  </div>
+
+  <div class="wct-channels-container">
+    <div class="wct-channels-head">
+      <span class="wct-eyebrow-light">Onde me encontrar</span>
+      <h2 class="wct-channels-title">
+        Fale direto, do jeito que for melhor pra você.
+      </h2>
+    </div>
+
+    <div class="wct-grid">
+      <a
+        href="https://wa.me/5583993767046?text=Ola"
+        class="wct-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="wct-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.5 1.34 5.02L2 22l5.13-1.35a9.96 9.96 0 0 0 4.91 1.28h.01c5.52 0 10-4.48 10-10s-4.48-9.93-10.01-9.93zm5.04 14.15c-.24.67-1.39 1.29-1.92 1.37-.47.07-1.09.12-3.15-.73a11.45 11.45 0 0 1-4.94-4.34c-.61-.81-1.04-1.8-1.04-2.84 0-2.12 1.1-3.16 1.5-3.56.3-.3.79-.44 1.24-.44h.4c.33 0 .76-.01 1.1.8.35.84 1.19 2.91 1.29 3.11.1.2.17.44.03.72-.13.27-.3.44-.6.78-.3.33-.63.74-.9 1 .3.53.8 1.05 1.41 1.59a7.6 7.6 0 0 0 2.29 1.41c.36-.3.8-.82 1.13-1.21.26-.3.6-.26.96-.13.37.13 2.33 1.1 2.73 1.3.4.2.67.3.77.47.1.17.1.98-.14 1.66z"/>
+          </svg>
+        </div>
+        <h3 class="wct-card-title">WhatsApp</h3>
+        <p class="wct-card-desc">(83) 9 9376-7046</p>
+        <span class="wct-card-cta">Chamar no WhatsApp →</span>
+      </a>
+
+      <a href="tel:+5583993301893" class="wct-card">
+        <div class="wct-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
+        </div>
+        <h3 class="wct-card-title">Telefone</h3>
+        <p class="wct-card-desc">(83) 9 9330-1893</p>
+        <span class="wct-card-cta">Ligar agora →</span>
+      </a>
+
+      <a href="mailto:andrezateles.adm@gmail.com" class="wct-card">
+        <div class="wct-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="wct-card-title">E-mail</h3>
+        <p class="wct-card-desc">andrezateles.adm@gmail.com</p>
+        <span class="wct-card-cta">Enviar e-mail →</span>
+      </a>
+
+      <a
+        href="https://maps.app.goo.gl/Wnq3S2gTouNx9X5p8"
+        class="wct-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="wct-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+        </div>
+        <h3 class="wct-card-title">Localização</h3>
+        <p class="wct-card-desc">Campina Grande - PB</p>
+        <span class="wct-card-cta">Ver no mapa →</span>
+      </a>
+    </div>
+
+    <div class="wct-social-row">
+      <p class="wct-social-label">Redes sociais</p>
+
+      <div class="wct-social-grid">
+        <a
+          href="https://www.instagram.com/andrezateles.gestaoenegocios/"
+          class="wct-social-card"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="wct-social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="wct-social-info">
+            <span class="wct-social-name">Instagram</span>
+            <span class="wct-social-handle">@andrezateles.gestaoenegocios</span>
+          </span>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/andrezatelesgestaoenegocios/"
+          class="wct-social-card"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="wct-social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M7 10v6M7 7.5v.01M11 16v-3.5c0-1.5 1-2.5 2.3-2.5 1.2 0 1.7.9 1.7 2.5V16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="wct-social-info">
+            <span class="wct-social-name">LinkedIn</span>
+            <span class="wct-social-handle">Andreza Teles de Andrade</span>
+          </span>
+        </a>
+
+        <a
+          href="https://www.facebook.com/andrezateles"
+          class="wct-social-card"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="wct-social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M14 8.5h2V5.3c-.35-.05-1.53-.15-2.5-.15-2.5 0-4 1.5-4 4.3v2.4H7v3.6h2.5V21h3.4v-5.5H15l.5-3.6h-3v-2c0-.85.3-1.4 1.5-1.4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="wct-social-info">
+            <span class="wct-social-name">Facebook</span>
+            <span class="wct-social-handle">Andreza Teles</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<noscript>
+<style>
+.wct-channels .wct-eyebrow-light,
+.wct-channels .wct-channels-title,
+.wct-channels .wct-card,
+.wct-channels .wct-social-label,
+.wct-channels .wct-social-card {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+</style>
+</noscript>
+
+<script>
+(function () {
+  "use strict";
+
+  var sections = Array.prototype.slice.call(
+    document.querySelectorAll(".wct-channels")
+  );
+
+  if (!sections.length) return;
+
+  var reduceMotion =
+    window.matchMedia &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  var lastY =
+    window.scrollY ||
+    window.pageYOffset ||
+    0;
+
+  var direction = "down";
+  var ticking = false;
+
+  function getItems(section) {
+    return [
+      section.querySelector(".wct-eyebrow-light"),
+      section.querySelector(".wct-channels-title")
+    ].concat(
+      Array.prototype.slice.call(
+        section.querySelectorAll(".wct-card")
+      )
+    ).concat([
+      section.querySelector(".wct-social-label")
+    ]).concat(
+      Array.prototype.slice.call(
+        section.querySelectorAll(".wct-social-card")
+      )
+    ).filter(Boolean);
+  }
+
+  function setupNearview(section) {
+    if (
+      reduceMotion ||
+      !("IntersectionObserver" in window)
+    ) {
+      section.classList.add("wct-nearview");
+      return;
+    }
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          section.classList.toggle(
+            "wct-nearview",
+            entry.isIntersecting
+          );
+        });
+      },
+      {
+        rootMargin: "240px 0px 240px 0px",
+        threshold: 0
+      }
+    );
+
+    observer.observe(section);
+  }
+
+  function clearState(item) {
+    item.classList.remove(
+      "wct-channel-item-in-down",
+      "wct-channel-item-in-up",
+      "wct-channel-item-out-down",
+      "wct-channel-item-out-up"
+    );
+  }
+
+  function playIn(item, dir, delay) {
+    clearState(item);
+
+    item.style.setProperty(
+      "--wct-delay",
+      delay + "ms"
+    );
+
+    void item.offsetWidth;
+
+    item.classList.add(
+      dir === "up"
+        ? "wct-channel-item-in-up"
+        : "wct-channel-item-in-down"
+    );
+
+    item.dataset.wctChannelState = "in";
+  }
+
+  function playOut(item, dir) {
+    clearState(item);
+
+    void item.offsetWidth;
+
+    item.classList.add(
+      dir === "up"
+        ? "wct-channel-item-out-up"
+        : "wct-channel-item-out-down"
+    );
+
+    item.dataset.wctChannelState = "out";
+  }
+
+  function update() {
+    ticking = false;
+
+    if (reduceMotion) return;
+
+    var vh =
+      window.innerHeight ||
+      document.documentElement.clientHeight;
+
+    sections.forEach(function (section) {
+      var items = getItems(section);
+
+      items.forEach(function (item, index) {
+        var rect =
+          item.getBoundingClientRect();
+
+        var state =
+          item.dataset.wctChannelState ||
+          "idle";
+
+        var visible =
+          rect.bottom > 0 &&
+          rect.top < vh;
+
+        var entersDown =
+          rect.top <= vh * .93 &&
+          rect.bottom > 0;
+
+        var entersUp =
+          rect.bottom >= vh * .07 &&
+          rect.top < vh;
+
+        if (direction === "down") {
+          if (
+            entersDown &&
+            state !== "in"
+          ) {
+            playIn(
+              item,
+              "down",
+              index * 72
+            );
+            return;
+          }
+
+          if (
+            !visible &&
+            rect.bottom <= 0 &&
+            state === "in"
+          ) {
+            playOut(item, "down");
+            return;
+          }
+
+          if (
+            !visible &&
+            rect.top >= vh &&
+            state === "out"
+          ) {
+            clearState(item);
+            item.dataset.wctChannelState = "idle";
+          }
+        } else {
+          if (
+            entersUp &&
+            state !== "in"
+          ) {
+            playIn(
+              item,
+              "up",
+              (items.length - 1 - index) * 72
+            );
+            return;
+          }
+
+          if (
+            !visible &&
+            rect.top >= vh &&
+            state === "in"
+          ) {
+            playOut(item, "up");
+            return;
+          }
+
+          if (
+            !visible &&
+            rect.bottom <= 0 &&
+            state === "out"
+          ) {
+            clearState(item);
+            item.dataset.wctChannelState = "idle";
+          }
+        }
+      });
+    });
+  }
+
+  function requestUpdate() {
+    if (ticking) return;
+
+    ticking = true;
+    requestAnimationFrame(update);
+  }
+
+  function onScroll() {
+    var currentY =
+      window.scrollY ||
+      window.pageYOffset ||
+      0;
+
+    var delta =
+      currentY - lastY;
+
+    if (Math.abs(delta) > 1) {
+      direction =
+        delta > 0
+          ? "down"
+          : "up";
+    }
+
+    lastY = currentY;
+    requestUpdate();
+  }
+
+  sections.forEach(function (section) {
+    setupNearview(section);
+
+    getItems(section).forEach(function (item) {
+      item.dataset.wctChannelState = "idle";
+    });
+
+    if (reduceMotion) {
+      section.classList.add("wct-nearview");
+
+      getItems(section).forEach(function (item) {
+        item.style.opacity = "1";
+        item.style.visibility = "visible";
+        item.style.transform = "none";
+      });
+    }
+  });
+
+  if (reduceMotion) return;
+
+  update();
+
+  window.addEventListener(
+    "scroll",
+    onScroll,
+    { passive: true }
+  );
+
+  window.addEventListener(
+    "resize",
+    requestUpdate,
+    { passive: true }
+  );
+})();
+</script>
+<!-- ===================== 3. FORMULÁRIO ===================== -->
+<style>
+.wct-form-section {
+  --wct-azul: #1d3fd6;
+  --wct-tinta: #14151a;
+  --wct-cinza: #6b7280;
+  --wct-linha: #e3e5ea;
+  --wct-fonte: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --wct-fonte-serif: Georgia, "Times New Roman", serif;
+
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding: 80px 24px;
+  background:
+    linear-gradient(180deg, #fbfcff 0%, #f5f8ff 54%, #fbfcff 100%);
+  color: var(--wct-tinta);
+  font-family: var(--wct-fonte);
+  box-sizing: border-box;
+}
+
+.wct-form-section *,
+.wct-form-section *::before,
+.wct-form-section *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wct-form-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(rgba(29,63,214,.085) 1px, transparent 1px);
+  background-size: 28px 28px;
+  -webkit-mask-image:
+    radial-gradient(ellipse 82% 72% at 50% 40%, #000 24%, transparent 88%);
+  mask-image:
+    radial-gradient(ellipse 82% 72% at 50% 40%, #000 24%, transparent 88%);
+  opacity: .36;
+}
+
+.wct-form-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  contain: paint;
+}
+
+.wct-form-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(88px);
+  animation-play-state: paused;
+  will-change: transform;
+}
+
+.wct-form-section.wct-form-nearview .wct-form-glow,
+.wct-form-section.wct-form-nearview .wct-form-light,
+.wct-form-section.wct-form-nearview .wct-form-submit::before {
+  animation-play-state: running;
+}
+
+.wct-form-glow-1 {
+  width: 520px;
+  height: 420px;
+  top: -190px;
+  right: -180px;
+  opacity: .28;
+  background:
+    radial-gradient(ellipse, rgba(29,63,214,.36), transparent 72%);
+  animation: wct-form-glow-1 18s ease-in-out infinite alternate;
+}
+
+.wct-form-glow-2 {
+  width: 500px;
+  height: 390px;
+  left: -180px;
+  bottom: -190px;
+  opacity: .24;
+  background:
+    radial-gradient(ellipse, rgba(124,58,237,.31), transparent 72%);
+  animation: wct-form-glow-2 22s ease-in-out infinite alternate;
+}
+
+.wct-form-glow-3 {
+  width: 390px;
+  height: 300px;
+  left: 42%;
+  top: 35%;
+  opacity: .11;
+  background:
+    radial-gradient(ellipse, rgba(82,195,255,.74), transparent 72%);
+  animation: wct-form-glow-3 25s ease-in-out infinite alternate;
+}
+
+.wct-form-light {
+  position: absolute;
+  top: -30%;
+  left: -32%;
+  width: 40%;
+  height: 165%;
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    rgba(255,255,255,0) 25%,
+    rgba(255,255,255,.52) 48%,
+    rgba(191,203,255,.16) 58%,
+    rgba(255,255,255,0) 76%,
+    transparent 100%
+  );
+  filter: blur(30px);
+  opacity: 0;
+  transform: translate3d(-22%,0,0) skewX(-10deg);
+  animation: wct-form-light-pass 15s ease-in-out infinite;
+  animation-play-state: paused;
+  will-change: transform, opacity;
+}
+
+@keyframes wct-form-glow-1 {
+  from {
+    transform: translate3d(25px,-14px,0) scale(1);
+  }
+  to {
+    transform: translate3d(-145px,95px,0) scale(1.16);
+  }
+}
+
+@keyframes wct-form-glow-2 {
+  from {
+    transform: translate3d(-22px,18px,0) scale(1);
+  }
+  to {
+    transform: translate3d(140px,-88px,0) scale(1.18);
+  }
+}
+
+@keyframes wct-form-glow-3 {
+  from {
+    transform: translate3d(-36px,18px,0) scale(1);
+  }
+  to {
+    transform: translate3d(92px,-62px,0) scale(1.22);
+  }
+}
+
+@keyframes wct-form-light-pass {
+  0% {
+    transform: translate3d(-28%,0,0) skewX(-10deg);
+    opacity: 0;
+  }
+  18% {
+    opacity: .48;
+  }
+  52% {
+    opacity: .27;
+  }
+  80% {
+    opacity: .40;
+  }
+  100% {
+    transform: translate3d(340%,0,0) skewX(-10deg);
+    opacity: 0;
+  }
+}
+
+.wct-form-container {
+  position: relative;
+  z-index: 1;
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.wct-form-head {
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.wct-eyebrow,
+.wct-form-title,
+.wct-form-desc,
+.wct-field,
+.wct-form-submit {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.wct-eyebrow {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--wct-azul);
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: .12em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wct-form-title {
+  margin-bottom: 14px;
+  font-family: var(--wct-fonte-serif);
+  font-size: clamp(24px,2.8vw,30px);
+  font-weight: 400;
+  line-height: 1.35;
+  text-wrap: balance;
+}
+
+.wct-form-desc {
+  color: var(--wct-cinza);
+  font-size: 15px;
+  line-height: 1.62;
+  text-wrap: pretty;
+}
+
+.wct-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+  padding: 36px;
+  border: 1px solid rgba(29,63,214,.10);
+  border-radius: 22px;
+  background:
+    linear-gradient(155deg, rgba(255,255,255,.98), rgba(250,251,255,.95));
+  box-shadow:
+    0 24px 50px rgba(20,30,90,.09),
+    inset 0 1px 0 rgba(255,255,255,.9);
+  backdrop-filter: blur(10px);
+}
+
+.wct-form::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(29,63,214,.055), transparent 34%),
+    radial-gradient(circle at 100% 100%, rgba(124,58,237,.045), transparent 36%);
+}
+
+.wct-form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 9%;
+  right: 9%;
+  height: 1px;
+  background:
+    linear-gradient(90deg, transparent, rgba(29,63,214,.28), transparent);
+  opacity: .85;
+}
+
+.wct-form > * {
+  position: relative;
+  z-index: 1;
+}
+
+.wct-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.wct-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wct-field label {
+  color: var(--wct-tinta);
+  font-size: 13px;
+  font-weight: 650;
+  transition: color .2s ease;
+}
+
+.wct-field:focus-within label {
+  color: var(--wct-azul);
+}
+
+.wct-field input,
+.wct-field select,
+.wct-field textarea {
+  width: 100%;
+  border: 1px solid var(--wct-linha);
+  border-radius: 11px;
+  outline: none;
+  background: rgba(248,250,255,.86);
+  color: var(--wct-tinta);
+  font-family: var(--wct-fonte);
+  font-size: 14.5px;
+  padding: 13px 14px;
+  box-shadow: inset 0 1px 2px rgba(20,30,90,.025);
+  transition:
+    border-color .22s ease,
+    box-shadow .22s ease,
+    background .22s ease,
+    transform .22s ease;
+}
+
+.wct-field select {
+  min-height: 48px;
+  height: 48px;
+  line-height: normal;
+  padding: 0 42px 0 14px;
+  appearance: auto;
+  -webkit-appearance: auto;
+  vertical-align: middle;
+}
+
+.wct-field input::placeholder,
+.wct-field textarea::placeholder {
+  color: #9aa1af;
+}
+
+.wct-field input:focus,
+.wct-field select:focus,
+.wct-field textarea:focus {
+  border-color: var(--wct-azul);
+  background: #fff;
+  box-shadow:
+    0 0 0 4px rgba(29,63,214,.10),
+    0 8px 20px rgba(20,30,90,.045);
+  transform: translateY(-1px);
+}
+
+.wct-field textarea {
+  min-height: 112px;
+  resize: vertical;
+}
+
+.wct-form-submit {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  background:
+    linear-gradient(135deg, #1d3fd6 0%, #294ee2 100%);
+  color: #fff;
+  cursor: pointer;
+  font-family: var(--wct-fonte);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 28px;
+  box-shadow:
+    0 12px 26px rgba(29,63,214,.30);
+  transition:
+    transform .22s ease,
+    box-shadow .22s ease;
+}
+
+.wct-form-submit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 42%;
+  height: 100%;
+  background:
+    linear-gradient(
+      120deg,
+      transparent,
+      rgba(255,255,255,.42),
+      transparent
+    );
+  transform: skewX(-20deg);
+  animation: wct-form-button-shimmer 3.8s ease-in-out infinite;
+  animation-play-state: paused;
+}
+
+.wct-form-submit svg,
+.wct-form-submit > span {
+  position: relative;
+  z-index: 1;
+}
+
+.wct-form-submit svg {
+  transition: transform .22s ease;
+}
+
+@keyframes wct-form-button-shimmer {
+  0% {
+    left: -60%;
+  }
+  55% {
+    left: 130%;
+  }
+  100% {
+    left: 130%;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .wct-form-submit:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 16px 32px rgba(29,63,214,.40);
+  }
+
+  .wct-form-submit:hover svg {
+    transform: translateX(4px);
+  }
+}
+
+.wct-form-submit:focus-visible {
+  outline: 2px solid var(--wct-azul);
+  outline-offset: 4px;
+}
+
+@media (max-width:900px) {
+  .wct-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:599px) {
+  .wct-form-section {
+    padding: 56px 20px;
+  }
+
+  .wct-form {
+    padding: 24px 20px;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .wct-form-glow,
+  .wct-form-light,
+  .wct-form-submit::before {
+    animation: none !important;
+  }
+
+  .wct-eyebrow,
+  .wct-form-title,
+  .wct-form-desc,
+  .wct-field,
+  .wct-form-submit {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+}
+</style>
+
+<section class="wct-form-section">
+  <div class="wct-form-bg" aria-hidden="true">
+    <span class="wct-form-glow wct-form-glow-1"></span>
+    <span class="wct-form-glow wct-form-glow-2"></span>
+    <span class="wct-form-glow wct-form-glow-3"></span>
+    <span class="wct-form-light"></span>
+  </div>
+
+  <div class="wct-form-container">
+    <div class="wct-form-head">
+      <span class="wct-eyebrow">Formulário</span>
+
+      <h2 class="wct-form-title">
+        Prefere escrever? Me conta o que precisa.
+      </h2>
+
+      <p class="wct-form-desc">
+        Preencha os campos abaixo — ao enviar, uma conversa já abre no WhatsApp com sua mensagem preenchida, pronta pra mandar.
+      </p>
+    </div>
+
+    <form class="wct-form" id="wctForm">
+      <div class="wct-form-row">
+        <div class="wct-field">
+          <label for="wctNome">Nome</label>
+          <input
+            type="text"
+            id="wctNome"
+            name="nome"
+            placeholder="Seu nome completo"
+            autocomplete="name"
+            required
+          >
+        </div>
+
+        <div class="wct-field">
+          <label for="wctTelefone">WhatsApp / Telefone</label>
+          <input
+            type="tel"
+            id="wctTelefone"
+            name="telefone"
+            placeholder="(00) 00000-0000"
+            autocomplete="tel"
+            inputmode="tel"
+            required
+          >
+        </div>
+      </div>
+
+      <div class="wct-field">
+        <label for="wctAssunto">Assunto</label>
+
+        <select id="wctAssunto" name="assunto">
+          <option value="Assessoria Profissional por Hora">Assessoria Profissional por Hora</option>
+          <option value="Simulação de Entrevista">Simulação de Entrevista</option>
+          <option value="Desenvolvimento de LinkedIn">Desenvolvimento de LinkedIn</option>
+          <option value="Desenvolvimento de Currículo">Desenvolvimento de Currículo</option>
+          <option value="Mentoria de Carreira">Mentoria de Carreira</option>
+          <option value="Consultoria Empresarial">Consultoria Empresarial</option>
+          <option value="Outro assunto">Outro assunto</option>
+        </select>
+      </div>
+
+      <div class="wct-field">
+        <label for="wctMensagem">Mensagem</label>
+        <textarea
+          id="wctMensagem"
+          name="mensagem"
+          rows="5"
+          placeholder="Conte um pouco do que você precisa..."
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" class="wct-form-submit">
+        <span>Enviar pelo WhatsApp</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+</section>
+
+<noscript>
+<style>
+.wct-form-section .wct-eyebrow,
+.wct-form-section .wct-form-title,
+.wct-form-section .wct-form-desc,
+.wct-form-section .wct-field,
+.wct-form-section .wct-form-submit {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+</style>
+</noscript>
+
+<script>
+(function () {
+  "use strict";
+
+  var sections = Array.prototype.slice.call(
+    document.querySelectorAll(".wct-form-section")
+  );
+
+  if (!sections.length) return;
+
+  var reduceMotion =
+    window.matchMedia &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  var lastY =
+    window.scrollY ||
+    window.pageYOffset ||
+    0;
+
+  var direction = "down";
+  var ticking = false;
+
+  function getItems(section) {
+    var fields =
+      Array.prototype.slice.call(
+        section.querySelectorAll(".wct-field")
+      );
+
+    return [
+      section.querySelector(".wct-eyebrow"),
+      section.querySelector(".wct-form-title"),
+      section.querySelector(".wct-form-desc")
+    ].concat(fields).concat([
+      section.querySelector(".wct-form-submit")
+    ]).filter(Boolean);
+  }
+
+  function setupNearview(section) {
+    if (
+      reduceMotion ||
+      !("IntersectionObserver" in window)
+    ) {
+      section.classList.add(
+        "wct-form-nearview"
+      );
+      return;
+    }
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          section.classList.toggle(
+            "wct-form-nearview",
+            entry.isIntersecting
+          );
+        });
+      },
+      {
+        rootMargin: "240px 0px 240px 0px",
+        threshold: 0
+      }
+    );
+
+    observer.observe(section);
+  }
+
+  function cancelAnimation(item) {
+    if (
+      item._wctMotion &&
+      typeof item._wctMotion.cancel === "function"
+    ) {
+      item._wctMotion.cancel();
+      item._wctMotion = null;
+    }
+  }
+
+  function enter(item, dir, delay) {
+    cancelAnimation(item);
+
+    item.style.visibility = "visible";
+
+    var fromY =
+      dir === "up"
+        ? 24
+        : -24;
+
+    var scale =
+      item.classList.contains("wct-field") ||
+      item.classList.contains("wct-form-submit")
+        ? .985
+        : 1;
+
+    item._wctMotion = item.animate(
+      [
+        {
+          opacity: 0,
+          transform:
+            "translate3d(0," +
+            fromY +
+            "px,0) scale(" +
+            scale +
+            ")"
+        },
+        {
+          opacity: 1,
+          transform:
+            "translate3d(0,0,0) scale(1)"
+        }
+      ],
+      {
+        duration: 820,
+        delay: delay,
+        easing:
+          "cubic-bezier(.16,1,.3,1)",
+        fill: "both"
+      }
+    );
+
+    item.dataset.wctFormState = "in";
+
+    item._wctMotion.onfinish =
+      function () {
+        item.style.opacity = "1";
+        item.style.visibility = "visible";
+        item.style.transform = "none";
+
+        if (item._wctMotion) {
+          item._wctMotion.cancel();
+          item._wctMotion = null;
+        }
+      };
+  }
+
+  function exit(item, dir) {
+    cancelAnimation(item);
+
+    item.style.visibility = "visible";
+
+    var toY =
+      dir === "up"
+        ? 18
+        : -18;
+
+    item._wctMotion = item.animate(
+      [
+        {
+          opacity: 1,
+          transform:
+            "translate3d(0,0,0)"
+        },
+        {
+          opacity: 0,
+          transform:
+            "translate3d(0," +
+            toY +
+            "px,0)"
+        }
+      ],
+      {
+        duration: 460,
+        easing:
+          "cubic-bezier(.4,0,.6,1)",
+        fill: "both"
+      }
+    );
+
+    item.dataset.wctFormState = "out";
+
+    item._wctMotion.onfinish =
+      function () {
+        item.style.opacity = "0";
+        item.style.visibility = "hidden";
+        item.style.transform = "none";
+
+        if (item._wctMotion) {
+          item._wctMotion.cancel();
+          item._wctMotion = null;
+        }
+      };
+  }
+
+  function resetItem(item) {
+    cancelAnimation(item);
+
+    item.style.opacity = "0";
+    item.style.visibility = "hidden";
+    item.style.transform = "none";
+
+    item.dataset.wctFormState = "idle";
+  }
+
+  function update() {
+    ticking = false;
+
+    if (reduceMotion) return;
+
+    var vh =
+      window.innerHeight ||
+      document.documentElement.clientHeight;
+
+    sections.forEach(function (section) {
+      var items = getItems(section);
+
+      items.forEach(function (item, index) {
+        var rect =
+          item.getBoundingClientRect();
+
+        var state =
+          item.dataset.wctFormState ||
+          "idle";
+
+        var visible =
+          rect.bottom > 0 &&
+          rect.top < vh;
+
+        var entersDown =
+          rect.top <= vh * .93 &&
+          rect.bottom > 0;
+
+        var entersUp =
+          rect.bottom >= vh * .07 &&
+          rect.top < vh;
+
+        if (direction === "down") {
+          if (
+            entersDown &&
+            state !== "in"
+          ) {
+            enter(
+              item,
+              "down",
+              index * 82
+            );
+            return;
+          }
+
+          if (
+            !visible &&
+            rect.bottom <= 0 &&
+            state === "in"
+          ) {
+            exit(
+              item,
+              "down"
+            );
+            return;
+          }
+
+          if (
+            !visible &&
+            rect.top >= vh &&
+            state === "out"
+          ) {
+            resetItem(item);
+          }
+        } else {
+          if (
+            entersUp &&
+            state !== "in"
+          ) {
+            enter(
+              item,
+              "up",
+              (items.length - 1 - index) * 82
+            );
+            return;
+          }
+
+          if (
+            !visible &&
+            rect.top >= vh &&
+            state === "in"
+          ) {
+            exit(
+              item,
+              "up"
+            );
+            return;
+          }
+
+          if (
+            !visible &&
+            rect.bottom <= 0 &&
+            state === "out"
+          ) {
+            resetItem(item);
+          }
+        }
+      });
+    });
+  }
+
+  function requestUpdate() {
+    if (ticking) return;
+
+    ticking = true;
+    requestAnimationFrame(update);
+  }
+
+  function onScroll() {
+    var currentY =
+      window.scrollY ||
+      window.pageYOffset ||
+      0;
+
+    var delta =
+      currentY - lastY;
+
+    if (Math.abs(delta) > 1) {
+      direction =
+        delta > 0
+          ? "down"
+          : "up";
+    }
+
+    lastY = currentY;
+    requestUpdate();
+  }
+
+  sections.forEach(function (section) {
+    setupNearview(section);
+
+    getItems(section).forEach(function (item) {
+      item.dataset.wctFormState = "idle";
+    });
+
+    if (reduceMotion) {
+      section.classList.add(
+        "wct-form-nearview"
+      );
+
+      getItems(section).forEach(function (item) {
+        item.style.opacity = "1";
+        item.style.visibility = "visible";
+        item.style.transform = "none";
+      });
+    }
+  });
+
+  if (reduceMotion) return;
+
+  update();
+
+  window.addEventListener(
+    "scroll",
+    onScroll,
+    { passive: true }
+  );
+
+  window.addEventListener(
+    "resize",
+    requestUpdate,
+    { passive: true }
+  );
+})();
+
+(function () {
+  "use strict";
+
+  var form =
+    document.getElementById("wctForm");
+
+  if (!form) return;
+
+  var numeroWhatsApp =
+    "5583993767046";
+
+  form.addEventListener(
+    "submit",
+    function (event) {
+      event.preventDefault();
+
+      if (!form.reportValidity()) {
+        return;
+      }
+
+      var nome =
+        form.nome.value.trim();
+
+      var telefone =
+        form.telefone.value.trim();
+
+      var assunto =
+        form.assunto.value;
+
+      var mensagem =
+        form.mensagem.value.trim();
+
+      var texto =
+        "Olá! Meu nome é " +
+        nome +
+        ".\n" +
+        "quero saber mais sobre: " +
+        assunto +
+        "\n" +
+        "Meu WhatsApp/telefone: " +
+        telefone +
+        "\n\n" +
+        "Mensagem: " +
+        mensagem;
+
+      var url =
+        "https://wa.me/" +
+        numeroWhatsApp +
+        "?text=" +
+        encodeURIComponent(texto);
+
+      window.open(
+        url,
+        "_blank",
+        "noopener"
+      );
+    }
+  );
+})();
+</script>
+<!-- ===================== FOOTER ===================== -->
+<style>
+.wff-footer {
+  --wff-azul: #1d3fd6;
+  --wff-azul-claro: #6d8bff;
+  --wff-fundo: #0f1730;
+  --wff-texto: #c7cede;
+  --wff-texto-fraco: #838ba8;
+  --wff-borda: rgba(255,255,255,.08);
+  --wff-fonte: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --wff-fonte-serif: Georgia, "Times New Roman", serif;
+
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding: 64px 24px 0;
+  box-sizing: border-box;
+  font-family: var(--wff-fonte);
+  background:
+    radial-gradient(ellipse 900px 420px at 15% 0%, rgba(29,63,214,.16), transparent 65%),
+    radial-gradient(ellipse 700px 380px at 100% 20%, rgba(109,139,255,.10), transparent 60%),
+    linear-gradient(180deg, #0c1226 0%, var(--wff-fundo) 40%, #0a0f22 100%);
+}
+
+.wff-footer *,
+.wff-footer *::before,
+.wff-footer *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wff-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 56px 56px;
+  -webkit-mask-image: linear-gradient(180deg, #000, transparent 78%);
+  mask-image: linear-gradient(180deg, #000, transparent 78%);
+}
+
+.wff-footer::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 520px;
+  height: 520px;
+  top: -260px;
+  left: 50%;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: .34;
+  filter: blur(70px);
+  background: radial-gradient(circle, rgba(70,105,255,.26), rgba(70,105,255,.08) 42%, transparent 72%);
+  transform: translate3d(-50%,0,0) scale(.95);
+  animation: wff-glow-move 18s ease-in-out infinite alternate;
+  animation-play-state: paused;
+}
+
+.wff-footer.wff-nearview::after {
+  animation-play-state: running;
+}
+
+@keyframes wff-glow-move {
+  from { transform: translate3d(-58%,0,0) scale(.95); }
+  to { transform: translate3d(-35%,70px,0) scale(1.12); }
+}
+
+.wff-logo,
+.wff-tagline,
+.wff-social,
+.wff-col:nth-child(2) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.wff-logo { translate: 0 12px; }
+.wff-tagline { translate: 0 16px; }
+.wff-social { translate: 0 14px; }
+.wff-col:not(.wff-col-brand) { translate: 0 24px; }
+.wff-bottom { translate: 0 14px; }
+
+.wff-footer.wff-logo-in .wff-logo {
+  animation: wff-enter-small .68s cubic-bezier(.22,.75,.24,1) 0s both;
+}
+
+.wff-footer.wff-tagline-in .wff-tagline {
+  animation: wff-enter-medium .74s cubic-bezier(.22,.75,.24,1) .04s both;
+}
+
+.wff-footer.wff-social-in .wff-social {
+  animation: wff-enter-medium .70s cubic-bezier(.22,.75,.24,1) .04s both;
+}
+
+.wff-footer.wff-social-in .wff-social-icon:nth-child(1) {
+  animation: wff-social-pop .52s cubic-bezier(.2,.8,.2,1.12) .12s both;
+}
+
+.wff-footer.wff-social-in .wff-social-icon:nth-child(2) {
+  animation: wff-social-pop .52s cubic-bezier(.2,.8,.2,1.12) .20s both;
+}
+
+.wff-footer.wff-social-in .wff-social-icon:nth-child(3) {
+  animation: wff-social-pop .52s cubic-bezier(.2,.8,.2,1.12) .28s both;
+}
+
+.wff-footer.wff-links-in .wff-col:nth-child(2) {
+  animation: wff-enter-column .78s cubic-bezier(.22,.75,.24,1) 0s both;
+}
+
+.wff-footer.wff-contact-in .wff-col:nth-child(3) {
+  animation: wff-enter-column .78s cubic-bezier(.22,.75,.24,1) 0s both;
+}
+
+.wff-footer.wff-links-in .wff-col:nth-child(2) .wff-link:nth-child(1) { animation: wff-link-in .50s .12s both; }
+.wff-footer.wff-links-in .wff-col:nth-child(2) .wff-link:nth-child(2) { animation: wff-link-in .50s .18s both; }
+.wff-footer.wff-links-in .wff-col:nth-child(2) .wff-link:nth-child(3) { animation: wff-link-in .50s .24s both; }
+.wff-footer.wff-links-in .wff-col:nth-child(2) .wff-link:nth-child(4) { animation: wff-link-in .50s .30s both; }
+.wff-footer.wff-links-in .wff-col:nth-child(2) .wff-link:nth-child(5) { animation: wff-link-in .50s .36s both; }
+
+.wff-footer.wff-contact-in .wff-col:nth-child(3) .wff-contact-item:nth-child(1) { animation: wff-link-in .50s .12s both; }
+.wff-footer.wff-contact-in .wff-col:nth-child(3) .wff-contact-item:nth-child(2) { animation: wff-link-in .50s .18s both; }
+.wff-footer.wff-contact-in .wff-col:nth-child(3) .wff-contact-item:nth-child(3) { animation: wff-link-in .50s .24s both; }
+.wff-footer.wff-contact-in .wff-col:nth-child(3) .wff-contact-item:nth-child(4) { animation: wff-link-in .50s .30s both; }
+
+.wff-footer.wff-bottom-in .wff-bottom {
+  animation: wff-enter-small .66s cubic-bezier(.22,.75,.24,1) 0s both;
+}
+
+.wff-footer.wff-leaving .wff-bottom {
+  animation: wff-exit-down .42s cubic-bezier(.4,0,.6,1) 0s both;
+}
+
+.wff-footer.wff-leaving .wff-col:nth-child(3) {
+  animation: wff-exit-down .46s cubic-bezier(.4,0,.6,1) .04s both;
+}
+
+.wff-footer.wff-leaving .wff-col:nth-child(2) {
+  animation: wff-exit-down .46s cubic-bezier(.4,0,.6,1) .08s both;
+}
+
+.wff-footer.wff-leaving .wff-social {
+  animation: wff-exit-down .42s cubic-bezier(.4,0,.6,1) .10s both;
+}
+
+.wff-footer.wff-leaving .wff-tagline {
+  animation: wff-exit-down .42s cubic-bezier(.4,0,.6,1) .12s both;
+}
+
+.wff-footer.wff-leaving .wff-logo {
+  animation: wff-exit-down .42s cubic-bezier(.4,0,.6,1) .14s both;
+}
+
+@keyframes wff-enter-small {
+  from { opacity: 0; visibility: visible; translate: 0 12px; }
+  to { opacity: 1; visibility: visible; translate: 0 0; }
+}
+
+@keyframes wff-enter-medium {
+  from { opacity: 0; visibility: visible; translate: 0 16px; }
+  to { opacity: 1; visibility: visible; translate: 0 0; }
+}
+
+@keyframes wff-enter-column {
+  from { opacity: 0; visibility: visible; translate: 0 24px; }
+  to { opacity: 1; visibility: visible; translate: 0 0; }
+}
+
+@keyframes wff-link-in {
+  from { opacity: 0; translate: 0 8px; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+@keyframes wff-social-pop {
+  from { opacity: 0; scale: .82; }
+  to { opacity: 1; scale: 1; }
+}
+
+@keyframes wff-exit-down {
+  from { opacity: 1; visibility: visible; translate: 0 0; }
+  to { opacity: 0; visibility: visible; translate: 0 12px; }
+}
+
+.wff-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wff-top {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 48px;
+}
+
+.wff-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-family: var(--wff-fonte-serif);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.wff-tagline {
+  max-width: 340px;
+  margin-bottom: 24px;
+  color: var(--wff-texto);
+  font-size: 14px;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.wff-social {
+  display: flex;
+  gap: 10px;
+}
+
+.wff-social-icon,
+.wff-social-icon:visited,
+.wff-social-icon:focus,
+.wff-social-icon:active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border: 1.5px solid var(--wff-borda);
+  border-radius: 50%;
+  color: var(--wff-texto) !important;
+  text-decoration: none !important;
+  background: rgba(255,255,255,.015);
+  transition:
+    background-color .22s ease,
+    color .22s ease,
+    border-color .22s ease,
+    transform .22s ease,
+    box-shadow .22s ease;
+}
+
+.wff-col-title {
+  margin-bottom: 22px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: .04em;
+}
+
+.wff-links,
+.wff-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.wff-link,
+.wff-link:visited,
+.wff-link:focus,
+.wff-link:active {
+  position: relative;
+  width: fit-content;
+  color: var(--wff-texto) !important;
+  font-size: 14px;
+  line-height: 1.4;
+  text-decoration: none !important;
+  transition: color .22s ease, transform .22s ease;
+}
+
+.wff-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1px;
+  border-radius: 1px;
+  background: var(--wff-azul-claro);
+  transition: width .22s ease;
+}
+
+.wff-contact-item,
+.wff-contact-item:visited,
+.wff-contact-item:focus,
+.wff-contact-item:active {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  color: var(--wff-texto) !important;
+  font-size: 14px;
+  line-height: 1.4;
+  text-decoration: none !important;
+  transition: color .22s ease, transform .22s ease;
+}
+
+.wff-contact-item svg {
+  flex-shrink: 0;
+  color: var(--wff-azul);
+  transition: color .22s ease, transform .22s ease;
+}
+
+.wff-social-icon:focus-visible,
+.wff-link:focus-visible,
+.wff-contact-item:focus-visible {
+  outline: 3px solid rgba(109,139,255,.24);
+  outline-offset: 4px;
+}
+
+.wff-bottom {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 22px 0;
+  border-top: 1px solid var(--wff-borda);
+}
+
+.wff-copy,
+.wff-credit {
+  color: var(--wff-texto-fraco);
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .wff-social-icon:hover {
+    color: #fff !important;
+    background: var(--wff-azul);
+    border-color: var(--wff-azul);
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 8px 18px rgba(29,63,214,.28);
+  }
+
+  .wff-social-icon:hover svg {
+    transform: scale(1.06);
+  }
+
+  .wff-link:hover {
+    color: #fff !important;
+    transform: translateX(3px);
+  }
+
+  .wff-link:hover::after {
+    width: 100%;
+  }
+
+  .wff-contact-item:hover {
+    color: #fff !important;
+    transform: translateX(3px);
+  }
+
+  .wff-contact-item:hover svg {
+    color: var(--wff-azul-claro);
+    transform: scale(1.08);
+  }
+
+  .wff-col-brand:hover .wff-logo {
+    text-shadow: 0 0 18px rgba(109,139,255,.16);
+  }
+}
+
+@media (max-width:767px) {
+  .wff-top {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+
+  .wff-col-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width:480px) {
+  .wff-footer {
+    padding: 48px 20px 0;
+  }
+
+  .wff-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .wff-bottom {
+    flex-direction: column;
+    padding: 20px 0 24px;
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .wff-footer::after {
+    animation: none !important;
+  }
+
+  .wff-logo,
+  .wff-tagline,
+  .wff-social,
+  .wff-col:not(.wff-col-brand),
+  .wff-bottom,
+  .wff-social-icon,
+  .wff-link,
+  .wff-contact-item,
+  .wff-footer.wff-leaving .wff-logo,
+  .wff-footer.wff-leaving .wff-tagline,
+  .wff-footer.wff-leaving .wff-social,
+  .wff-footer.wff-leaving .wff-col,
+  .wff-footer.wff-leaving .wff-bottom {
+    opacity: 1 !important;
+    visibility: visible !important;
+    translate: 0 0 !important;
+    scale: 1 !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
+</style>
+
+<footer class="wff-footer">
+  <div class="wff-container">
+
+    <div class="wff-top">
+
+      <div class="wff-col wff-col-brand">
+        <span class="wff-logo">Andreza Teles</span>
+
+        <p class="wff-tagline">
+          Consultoria, mentorias e treinamentos para transformar carreiras, líderes e negócios.
+        </p>
+
+        <div class="wff-social">
+
+          <a href="https://www.instagram.com/andrezateles.gestaoenegocios/" class="wff-social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
+            </svg>
+          </a>
+
+          <a href="https://www.facebook.com/andrezateles" class="wff-social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M14 8.5h2V5.3c-.35-.05-1.53-.15-2.5-.15-2.5 0-4 1.5-4 4.3v2.4H7v3.6h2.5V21h3.4v-5.5H15l.5-3.6h-3v-2c0-.85.3-1.4 1.5-1.4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/andrezatelesgestaoenegocios/" class="wff-social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M7 10v6M7 7.5v.01M11 16v-3.5c0-1.5 1-2.5 2.3-2.5 1.2 0 1.7.9 1.7 2.5V16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="wff-col">
+        <h4 class="wff-col-title">Links Rápidos</h4>
+
+        <nav class="wff-links" aria-label="Links rápidos">
+          <a href="/Home/" class="wff-link">Home</a>
+          <a href="/Sobre/" class="wff-link">Sobre</a>
+          <a href="/Serviços/" class="wff-link">Serviços</a>
+          <a href="/Cursos/" class="wff-link">Cursos</a>
+          <a href="/Contato/" class="wff-link">Contato</a>
+        </nav>
+      </div>
+
+      <div class="wff-col">
+        <h4 class="wff-col-title">Contato</h4>
+
+        <div class="wff-contact">
+
+          <a href="https://wa.me/5583993767046" class="wff-contact-item" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+              <path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.5 1.34 5.02L2 22l5.13-1.35a9.96 9.96 0 0 0 4.91 1.28h.01c5.52 0 10-4.48 10-10s-4.48-9.93-10.01-9.93zm5.04 14.15c-.24.67-1.39 1.29-1.92 1.37-.47.07-1.09.12-3.15-.73a11.45 11.45 0 0 1-4.94-4.34c-.61-.81-1.04-1.8-1.04-2.84 0-2.12 1.1-3.16 1.5-3.56.3-.3.79-.44 1.24-.44h.4c.33 0 .76-.01 1.1.8.35.84 1.19 2.91 1.29 3.11.1.2.17.44.03.72-.13.27-.3.44-.6.78-.3.33-.63.74-.9 1 .3.53.8 1.05 1.41 1.59a7.6 7.6 0 0 0 2.29 1.41c.36-.3.8-.82 1.13-1.21.26-.3.6-.26.96-.13.37.13 2.33 1.1 2.73 1.3.4.2.67.3.77.47.1.17.1.98-.14 1.66z"/>
+            </svg>
+            (83) 9 9376-7046
+          </a>
+
+          <a href="tel:+5583993301893" class="wff-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+              <path d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            (83) 9 9330-1893
+          </a>
+
+          <a href="https://maps.app.goo.gl/L7nb9ouHR2YxPCoZ9" class="wff-contact-item" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            Andreza Teles - Campina Grande - PB
+          </a>
+
+          <a href="mailto:andrezateles.adm@gmail.com" class="wff-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            andrezateles.adm@gmail.com
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="wff-bottom">
+      <p class="wff-copy">© 2026 Andreza Teles Consultoria. Todos os direitos reservados.</p>
+      <a href="https://wa.me/5583987770328"
+      class="wff-credit"
+      > Desenvolvido por Mateus Aguiar
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+<noscript>
+<style>
+.wff-footer .wff-logo,
+.wff-footer .wff-tagline,
+.wff-footer .wff-social,
+.wff-footer .wff-col:not(.wff-col-brand),
+.wff-footer .wff-bottom {
+  opacity: 1 !important;
+  visibility: visible !important;
+  translate: 0 0 !important;
+  animation: none !important;
+}
+</style>
+</noscript>
+
+<script>
+(function () {
+  "use strict";
+
+  const SECTION_SELECTOR = ".wff-footer";
+  const REDUCED_MOTION =
+    window.matchMedia &&
+    window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+
+  const ENTRY_LOGO_POINT = .88;
+  const ENTRY_TAGLINE_POINT = .82;
+  const ENTRY_SOCIAL_POINT = .76;
+  const ENTRY_LINKS_POINT = .78;
+  const ENTRY_CONTACT_POINT = .72;
+  const ENTRY_BOTTOM_POINT = .90;
+  const RESET_POINT = .96;
+
+  let footers = [];
+  let ticking = false;
+  let lastScrollY = window.scrollY || window.pageYOffset || 0;
+  let scrollDirection = "none";
+
+  function limparEntrada(footer) {
+    footer.classList.remove(
+      "wff-logo-in",
+      "wff-tagline-in",
+      "wff-social-in",
+      "wff-links-in",
+      "wff-contact-in",
+      "wff-bottom-in"
+    );
+  }
+
+  function configurarProximidade(footer) {
+    if (REDUCED_MOTION) {
+      footer.classList.add("wff-nearview");
+      return;
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      footer.classList.add("wff-nearview");
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          footer.classList.toggle("wff-nearview", entry.isIntersecting);
+        });
+      },
+      {
+        root: null,
+        rootMargin: "260px 0px 260px 0px",
+        threshold: 0
+      }
+    );
+
+    observer.observe(footer);
+  }
+
+  function entrarSeVisivel(footer, selector, className, point, viewportHeight) {
+    const element = footer.querySelector(selector);
+
+    if (!element) {
+      return;
+    }
+
+    const rect = element.getBoundingClientRect();
+
+    if (
+      rect.bottom > 0 &&
+      rect.top <= viewportHeight * point
+    ) {
+      footer.classList.add(className);
+    }
+  }
+
+  function atualizarScroll() {
+    ticking = false;
+
+    if (REDUCED_MOTION) {
+      return;
+    }
+
+    const viewportHeight =
+      window.innerHeight ||
+      document.documentElement.clientHeight;
+
+    for (let i = 0; i < footers.length; i++) {
+      const footer = footers[i];
+      const rect = footer.getBoundingClientRect();
+
+      if (rect.top > viewportHeight + 180) {
+        limparEntrada(footer);
+        footer.classList.remove("wff-leaving");
+        continue;
+      }
+
+      if (
+        scrollDirection === "up" &&
+        rect.top > viewportHeight * RESET_POINT
+      ) {
+        if (!footer.classList.contains("wff-leaving")) {
+          footer.classList.add("wff-leaving");
+        }
+
+        continue;
+      }
+
+      if (
+        scrollDirection === "down" &&
+        footer.classList.contains("wff-leaving") &&
+        rect.top < viewportHeight * RESET_POINT
+      ) {
+        footer.classList.remove("wff-leaving");
+        limparEntrada(footer);
+        void footer.offsetWidth;
+      }
+
+      if (!footer.classList.contains("wff-leaving")) {
+        entrarSeVisivel(footer, ".wff-logo", "wff-logo-in", ENTRY_LOGO_POINT, viewportHeight);
+        entrarSeVisivel(footer, ".wff-tagline", "wff-tagline-in", ENTRY_TAGLINE_POINT, viewportHeight);
+        entrarSeVisivel(footer, ".wff-social", "wff-social-in", ENTRY_SOCIAL_POINT, viewportHeight);
+        entrarSeVisivel(footer, ".wff-col:nth-child(2)", "wff-links-in", ENTRY_LINKS_POINT, viewportHeight);
+        entrarSeVisivel(footer, ".wff-col:nth-child(3)", "wff-contact-in", ENTRY_CONTACT_POINT, viewportHeight);
+        entrarSeVisivel(footer, ".wff-bottom", "wff-bottom-in", ENTRY_BOTTOM_POINT, viewportHeight);
+      }
+    }
+  }
+
+  function solicitarScroll() {
+    if (ticking) {
+      return;
+    }
+
+    ticking = true;
+    requestAnimationFrame(atualizarScroll);
+  }
+
+  function onScroll() {
+    const currentScrollY = window.scrollY || window.pageYOffset || 0;
+    const delta = currentScrollY - lastScrollY;
+
+    if (Math.abs(delta) > 1) {
+      scrollDirection = delta > 0 ? "down" : "up";
+    }
+
+    lastScrollY = currentScrollY;
+    solicitarScroll();
+  }
+
+  function iniciar() {
+    footers = Array.from(document.querySelectorAll(SECTION_SELECTOR));
+
+    if (!footers.length) {
+      return;
+    }
+
+    footers.forEach(configurarProximidade);
+
+    if (REDUCED_MOTION) {
+      footers.forEach(function (footer) {
+        footer.classList.add(
+          "wff-logo-in",
+          "wff-tagline-in",
+          "wff-social-in",
+          "wff-links-in",
+          "wff-contact-in",
+          "wff-bottom-in",
+          "wff-nearview"
+        );
+      });
+
+      return;
+    }
+
+    atualizarScroll();
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", solicitarScroll, { passive: true });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", iniciar, { once: true });
+  } else {
+    iniciar();
+  }
+})();
+</script>
+
+</body>
+</html>

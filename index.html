@@ -36,9 +36,11 @@
   --wdh-fonte: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   --wdh-fonte-serif: "Playfair Display", Georgia, serif;
 
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 5;
   padding: 20px 24px 0;
   box-sizing: border-box;
   font-family: var(--wdh-fonte);
@@ -528,7 +530,7 @@
     </a>
 
     <ul class="wdh-nav-links">
-      <li><a href="index.html"class="wdh-current">Home</a></li>
+      <li><a href="index.html" class="wdh-current">Home</a></li>
       <li><a href="sobre.html">Sobre</a></li>
       <li><a href="servicos.html">Serviços</a></li>
       <li><a href="cursos.html">Cursos</a></li>
@@ -551,7 +553,7 @@
 
   <div class="wdh-nav-mobile" id="wdh-nav-mobile-menu">
     <ul>
-     <li><a href="index.html"class="wdh-current">Home</a></li>
+     <li><a href="index.html" class="wdh-current">Home</a></li>
       <li><a href="sobre.html">Sobre</a></li>
       <li><a href="servicos.html">Serviços</a></li>
       <li><a href="cursos.html">Cursos</a></li>
@@ -645,7 +647,12 @@
   position: relative;
   box-sizing: border-box;
   font-family: var(--wdh-fonte);
-  background: transparent;
+  background-image:
+    linear-gradient(180deg, rgba(255,255,255,.28) 0%, rgba(255,255,255,.12) 45%, rgba(255,255,255,.30) 100%),
+    url("Assets/banner-desktop.webp");
+  background-size: cover;
+  background-position: center 32%;
+  background-repeat: no-repeat;
 }
 
 .wdh-section *,
@@ -670,7 +677,7 @@
 .wdh-content {
   position: relative;
   z-index: 2;
-  padding: 64px 40px 64px 64px;
+  padding: 176px 40px 64px 64px;
   transform: translate3d(0, var(--wdh-scroll-y, 0px), 0);
 }
 
@@ -942,7 +949,7 @@
   }
 
   .wdh-content {
-    padding: 40px 32px;
+    padding: 130px 32px 40px;
   }
 
   .wdh-title {
@@ -983,7 +990,7 @@
   .wdh-content {
     order: 1;
     width: 100%;
-    padding: 40px 24px 32px;
+    padding: 118px 24px 32px;
     text-align: center;
   }
 
@@ -1306,7 +1313,7 @@
 
   font-family: var(--wdaj-fonte);
 
-  background: #fafbfe;
+  background: linear-gradient(160deg, #eef2fc 0%, #e7edfb 55%, #eef2fc 100%);
 }
 
 .wdaj-section *,
@@ -1632,9 +1639,9 @@
 
   border-radius: 50%;
 
-  opacity: 0.50;
+  opacity: 0.64;
 
-  filter: blur(44px);
+  filter: blur(52px);
 
   transform: translate3d(0, 0, 0);
 
@@ -1648,17 +1655,17 @@
 }
 
 .wdaj-blob-1 {
-  width: 460px;
-  height: 460px;
+  width: 620px;
+  height: 620px;
 
-  top: -120px;
-  left: -100px;
+  top: -190px;
+  left: -170px;
 
   background:
     radial-gradient(
       circle,
-      rgba(29, 63, 214, 0.42),
-      transparent 70%
+      rgba(29, 63, 214, 0.58),
+      transparent 72%
     );
 
   animation:
@@ -1670,17 +1677,17 @@
 }
 
 .wdaj-blob-2 {
-  width: 420px;
-  height: 420px;
+  width: 580px;
+  height: 580px;
 
-  top: 5%;
-  right: -140px;
+  top: -8%;
+  right: -200px;
 
   background:
     radial-gradient(
       circle,
-      rgba(124, 58, 237, 0.37),
-      transparent 70%
+      rgba(124, 58, 237, 0.52),
+      transparent 72%
     );
 
   animation:
@@ -1692,17 +1699,17 @@
 }
 
 .wdaj-blob-3 {
-  width: 400px;
-  height: 400px;
+  width: 560px;
+  height: 560px;
 
-  bottom: -160px;
-  left: 25%;
+  bottom: -230px;
+  left: 20%;
 
   background:
     radial-gradient(
       circle,
-      rgba(22, 163, 74, 0.32),
-      transparent 70%
+      rgba(22, 163, 74, 0.46),
+      transparent 72%
     );
 
   animation:
@@ -2171,6 +2178,16 @@
       rgba(
         var(--wdaj-accent-rgb),
         0.18
+      ),
+      0 0 0 1px
+      rgba(
+        var(--wdaj-accent-rgb),
+        0.14
+      ),
+      0 0 32px
+      rgba(
+        var(--wdaj-accent-rgb),
+        0.20
       );
   }
 
@@ -5742,8 +5759,10 @@ and
 
 <!-- ===================== 4. SOBRE ANDREZA ===================== -->
 <style>
-.wsa-section{--wsa-azul:#1d3fd6;--wsa-preto:#14151a;--wsa-cinza-texto:#626a78;--wsa-borda:#e9ecf5;--wsa-fonte:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;--wsa-fonte-serif:Georgia,"Times New Roman",serif;position:relative;overflow:hidden;isolation:isolate;padding:72px 24px;box-sizing:border-box;background:#fff;font-family:var(--wsa-fonte)}
+.wsa-section{--wsa-azul:#6d8bff;--wsa-preto:#fff;--wsa-cinza-texto:#c3cbe6;--wsa-borda:rgba(255,255,255,.14);--wsa-fonte:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;--wsa-fonte-serif:Georgia,"Times New Roman",serif;position:relative;overflow:hidden;isolation:isolate;padding:72px 24px;box-sizing:border-box;background:radial-gradient(circle at 85% 15%,rgba(109,139,255,.10),transparent 40%),linear-gradient(160deg,#0d1330 0%,#101c44 55%,#0c1230 100%);font-family:var(--wsa-fonte)}
 .wsa-section *,.wsa-section *::before,.wsa-section *::after{box-sizing:border-box;margin:0;padding:0}
+.wsa-section::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);background-size:22px 22px;-webkit-mask-image:radial-gradient(ellipse 75% 65% at 75% 30%,#000 20%,transparent 82%);mask-image:radial-gradient(ellipse 75% 65% at 75% 30%,#000 20%,transparent 82%)}
+.wsa-container{position:relative;z-index:1}
 .wsa-photo,.wsa-stat-badge,.wsa-badge,.wsa-title,.wsa-desc,.wsa-tabs,.wsa-panels{opacity:0;visibility:hidden}
 .wsa-photo{translate:-28px 18px;scale:.985}.wsa-stat-badge{translate:0 16px;scale:.92}.wsa-badge{translate:0 12px}.wsa-title{translate:0 24px}.wsa-desc{translate:0 18px}.wsa-tabs{translate:0 16px}.wsa-panels{translate:0 14px}
 .wsa-section.wsa-photo-in .wsa-photo{animation:wsa-enter-photo .92s cubic-bezier(.22,.75,.24,1) both}.wsa-section.wsa-stat-in .wsa-stat-badge{animation:wsa-enter-stat .72s cubic-bezier(.2,.8,.2,1.15) .08s both}.wsa-section.wsa-badge-in .wsa-badge{animation:wsa-enter-small .70s cubic-bezier(.22,.75,.24,1) both}.wsa-section.wsa-title-in .wsa-title{animation:wsa-enter-title .90s cubic-bezier(.22,.75,.24,1) .06s both}.wsa-section.wsa-desc-in .wsa-desc{animation:wsa-enter-desc .78s cubic-bezier(.22,.75,.24,1) .08s both}.wsa-section.wsa-tabs-in .wsa-tabs{animation:wsa-enter-tabs .72s cubic-bezier(.22,.75,.24,1) .08s both}.wsa-section.wsa-panels-in .wsa-panels{animation:wsa-enter-panels .72s cubic-bezier(.22,.75,.24,1) .08s both}
@@ -5752,7 +5771,7 @@ and
 .wsa-bg{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;contain:paint}.wsa-blob{position:absolute;border-radius:50%;filter:blur(44px);opacity:.48;transform:translate3d(0,0,0);animation-play-state:paused;will-change:transform}.wsa-section.wsa-nearview .wsa-blob{animation-play-state:running}.wsa-blob-1{width:460px;height:460px;top:-120px;left:-100px;background:radial-gradient(circle,rgba(29,63,214,.40),transparent 70%);animation:wsa-float-1 15s ease-in-out infinite alternate}.wsa-blob-2{width:420px;height:420px;top:5%;right:-140px;background:radial-gradient(circle,rgba(124,58,237,.35),transparent 70%);animation:wsa-float-2 17s ease-in-out infinite alternate}.wsa-blob-3{width:400px;height:400px;bottom:-160px;left:25%;background:radial-gradient(circle,rgba(22,163,74,.30),transparent 70%);animation:wsa-float-3 19s ease-in-out infinite alternate}@keyframes wsa-float-1{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(185px,135px,0) scale(1.27)}}@keyframes wsa-float-2{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(-175px,185px,0) scale(1.24)}}@keyframes wsa-float-3{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(150px,-170px,0) scale(1.28)}}
 .wsa-container{position:relative;z-index:1;display:grid;grid-template-columns:380px 1fr;align-items:center;gap:64px;width:100%;max-width:1160px;margin:0 auto;min-width:0}.wsa-photo-col{position:relative;min-width:0;transform:translate3d(0,var(--wsa-photo-y,0px),0)}.wsa-content-col{width:100%;min-width:0;max-width:100%;transform:translate3d(0,var(--wsa-content-y,0px),0)}.wsa-section.wsa-nearview .wsa-photo-col,.wsa-section.wsa-nearview .wsa-content-col{will-change:transform}
 .wsa-photo{position:relative;width:100%;aspect-ratio:3/4;overflow:hidden;border-radius:24px;background:#eef0f5;box-shadow:0 20px 44px rgba(20,30,90,.12)}.wsa-photo-img{display:block;width:100%;height:100%;border:0;border-radius:24px;object-fit:cover;backface-visibility:hidden;user-select:none;transition:transform .55s cubic-bezier(.22,.61,.36,1)}
-.wsa-stat-badge{position:absolute;right:-20px;bottom:-24px;display:flex;align-items:center;gap:12px;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.97);box-shadow:0 16px 36px rgba(20,30,90,.16);border:1px solid rgba(29,63,214,.08)}.wsa-stat-number{color:var(--wsa-azul);font-family:var(--wsa-fonte-serif);font-size:34px;font-weight:700;line-height:1}.wsa-stat-label{color:var(--wsa-preto);font-size:12px;font-weight:600;line-height:1.35}
+.wsa-stat-badge{position:absolute;right:-20px;bottom:-24px;display:flex;align-items:center;gap:12px;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.97);box-shadow:0 16px 36px rgba(20,30,90,.16);border:1px solid rgba(29,63,214,.08)}.wsa-stat-number{color:var(--wsa-azul);font-family:var(--wsa-fonte-serif);font-size:34px;font-weight:700;line-height:1}.wsa-stat-label{color:#14151a;font-size:12px;font-weight:600;line-height:1.35}
 .wsa-badge{display:inline-flex;align-items:center;gap:10px;margin-bottom:16px;color:var(--wsa-azul);font-size:12px;font-weight:700;line-height:1.2;letter-spacing:.08em}.wsa-badge-line{display:inline-block;width:22px;height:1px;flex-shrink:0;background:var(--wsa-azul);opacity:.5}.wsa-title{max-width:560px;margin-bottom:16px;color:var(--wsa-preto);font-family:var(--wsa-fonte-serif);font-size:clamp(26px,3vw,36px);font-weight:400;line-height:1.3;text-wrap:balance}.wsa-title em{color:var(--wsa-azul);font-style:italic}.wsa-desc{max-width:520px;margin-bottom:32px;color:var(--wsa-cinza-texto);font-size:15px;line-height:1.65;text-wrap:pretty}
 .wsa-tabs{position:relative;display:flex;gap:6px;margin-bottom:24px;border-bottom:1.5px solid var(--wsa-borda)}.wsa-tab{appearance:none;flex:0 0 auto;margin-right:20px;padding:12px 6px;border:0;border-radius:0;background:transparent;color:var(--wsa-cinza-texto);cursor:pointer;font-family:var(--wsa-fonte);font-size:14px;font-weight:600;line-height:1.35;white-space:nowrap;transition:color .2s ease}.wsa-tab:hover{color:var(--wsa-preto)}.wsa-tab-active{color:var(--wsa-azul)}.wsa-tab:focus-visible{outline:3px solid rgba(29,63,214,.18);outline-offset:-2px;border-radius:5px}.wsa-tab-indicator{position:absolute;bottom:-1.5px;left:0;height:2.5px;border-radius:2px;background:var(--wsa-azul);transition:left .3s cubic-bezier(.4,0,.2,1),width .3s cubic-bezier(.4,0,.2,1)}.wsa-panels{min-height:112px}.wsa-panel{animation:wsa-panel-in .34s ease both}.wsa-panel p{color:var(--wsa-cinza-texto);font-size:15px;line-height:1.75;text-wrap:pretty}@keyframes wsa-panel-in{from{opacity:0;translate:0 6px}to{opacity:1;translate:0 0}}
 @media(hover:hover) and (pointer:fine) and (min-width:992px){.wsa-photo:hover .wsa-photo-img{transform:scale(1.018)}}
@@ -5840,7 +5859,7 @@ and
 
       <h2 class="wsa-title">
         Uma trajetória dedicada a
-        <em>transformar pessoas e negócios</em>.
+        <em>potencializar pessoas e negócios</em>.
       </h2>
 
       <p class="wsa-desc">
@@ -6668,7 +6687,7 @@ and
   padding: 88px 24px;
   box-sizing: border-box;
   font-family: var(--wfc-fonte);
-  background: linear-gradient(180deg, #f8fcff 0%, #eef8ff 35%, #e5f3ff 70%, #dbedff 100%);
+  background: linear-gradient(155deg, #101a42 0%, #14225a 45%, #1a2c74 100%);
 }
 .wfc-section *,
 .wfc-section *::before,
@@ -6820,7 +6839,7 @@ and
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
-  color: #5f7eb6;
+  color: #9db2ff;
   font-size: 12px;
   font-weight: 700;
   line-height: 1.2;
@@ -6830,11 +6849,11 @@ and
   width: 22px;
   height: 1px;
   flex-shrink: 0;
-  background: #5f7eb6;
+  background: #9db2ff;
 }
 .wfc-title {
   margin-bottom: 20px;
-  color: #1b2b52;
+  color: #fff;
   font-family: var(--wfc-fonte-serif);
   font-size: clamp(30px,4.4vw,46px);
   font-weight: 400;
@@ -6843,7 +6862,7 @@ and
 }
 .wfc-title em {
   font-style: italic;
-  color: #5a8cff;
+  color: #7fa0f7;
 }
 .wfc-section.wfc-nearview.wfc-title-in .wfc-title em {
   animation: wfc-title-glow 2.8s ease-in-out 1.2s infinite alternate;
@@ -6855,7 +6874,7 @@ and
 .wfc-desc {
   max-width: 520px;
   margin: 0 auto 40px;
-  color: #4d6487;
+  color: rgba(255,255,255,.78);
   font-size: 17px;
   line-height: 1.65;
   text-wrap: pretty;
@@ -6904,8 +6923,8 @@ and
 .wfc-btn-outline:visited,
 .wfc-btn-outline:focus,
 .wfc-btn-outline:active {
-  color: #35558b !important;
-  border: 1.5px solid #7da8e8;
+  color: #fff !important;
+  border: 1.5px solid rgba(255,255,255,.5);
   background: transparent;
 }
 .wfc-section.wfc-nearview.wfc-btn-1-in .wfc-btn-whatsapp {
@@ -6920,7 +6939,7 @@ and
 @media (hover:hover) and (pointer:fine) {
   .wfc-btn:hover { transform: translateY(-2px) scale(1.015); opacity: .96; }
   .wfc-btn-whatsapp:hover { color: #fff !important; box-shadow: 0 10px 26px rgba(29,143,224,.34); }
-  .wfc-btn-outline:hover { color: #294a80 !important; border-color: #5f8fda; background: rgba(255,255,255,.34); }
+  .wfc-btn-outline:hover { color: #fff !important; border-color: #fff; background: rgba(255,255,255,.10); }
 }
 @media (max-width:599px) {
   .wfc-section { padding: 64px 20px; }
@@ -7526,7 +7545,7 @@ and
         <span class="wff-logo">Andreza Teles</span>
 
         <p class="wff-tagline">
-          Consultoria, mentorias e treinamentos para transformar carreiras, líderes e negócios.
+          Consultoría, asesoría, mentoría, palestras e treinamentos para potencializar carreiras, líderes de negocios.
         </p>
 
         <div class="wff-social">
@@ -7606,7 +7625,7 @@ and
     </div>
 
     <div class="wff-bottom">
-      <p class="wff-copy">© 2026 Andreza Teles Consultoria. Todos os direitos reservados.</p>
+      <p class="wff-copy">© 2026 Andreza Teles Gestão e Negócios. Todos os direitos reservados.</p>
       <a href="https://wa.me/5583987770328"
       class="wff-credit"
       > Desenvolvido por Mateus Aguiar

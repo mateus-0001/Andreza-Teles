@@ -36,9 +36,11 @@
   --wdh-fonte: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   --wdh-fonte-serif: "Playfair Display", Georgia, serif;
 
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 5;
   padding: 20px 24px 0;
   box-sizing: border-box;
   font-family: var(--wdh-fonte);
@@ -636,22 +638,22 @@
 <!-- ===================== 1. HERO (SOBRE) ===================== -->
 <style>
 .wsb-hero {
-  --wsb-azul: #1d3fd6;
+  --wsb-azul: #8ba4f9;
   --wsb-azul-claro: #5b76e8;
-  --wsb-tinta: #14151a;
-  --wsb-cinza: #5f6878;
-  --wsb-cinza-claro: #70798b;
-  --wsb-borda: rgba(29,63,214,.12);
+  --wsb-tinta: #ffffff;
+  --wsb-cinza: #c7cede;
+  --wsb-cinza-claro: #a7b0cc;
+  --wsb-borda: rgba(255,255,255,.16);
   --wsb-fonte: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   --wsb-fonte-serif: Georgia, "Times New Roman", serif;
 
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  padding: 64px 24px 88px;
+  padding: 176px 24px 88px;
   box-sizing: border-box;
   background:
-    linear-gradient(180deg, rgba(250,251,254,.98), rgba(247,249,253,.98));
+    linear-gradient(150deg, #0d1533 0%, #12224f 55%, #0c1230 100%);
   color: var(--wsb-tinta);
   font-family: var(--wsb-fonte);
 }
@@ -883,7 +885,7 @@
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-image: radial-gradient(rgba(29,63,214,.11) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(255,255,255,.09) 1px, transparent 1px);
   background-size: 24px 24px;
   -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000 40%, transparent 90%);
   mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000 40%, transparent 90%);
@@ -1139,7 +1141,7 @@
 
 @media (max-width:599px) {
   .wsb-hero {
-    padding: 40px 20px 56px;
+    padding: 120px 20px 56px;
   }
 
   .wsb-hero-container {
@@ -3517,7 +3519,9 @@
       padding: 0 16px 0 0 !important;
     }
     .wsb-tl-item:nth-child(even) .wsb-tl-content {
+      grid-row: 1;
       grid-column: 3;
+      align-self: unset;
       text-align: left;
       padding: 0 0 0 16px !important;
     }
@@ -4549,21 +4553,21 @@
       width: 100%;
     }
     .wsb-compare-row {
-      padding: 18px 15px 17px;
+      padding: 20px 15px 19px;
       border-radius: 16px;
     }
     .wsb-compare-icon {
       width: 42px;
       height: 42px;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
     .wsb-compare-label {
-      margin-bottom: 14px;
+      margin-bottom: 20px;
       font-size: 11.5px;
     }
     .wsb-compare-cells {
       grid-template-columns: 1fr;
-      gap: 16px;
+      gap: 22px;
     }
     .wsb-compare-cells::before {
       display: block;
@@ -4582,13 +4586,13 @@
       transform: translate(-50%, -50%);
     }
     .wsb-compare-cells::after {
-      display: block;
+      display: none;
     }
     .wsb-compare-col {
       padding: 0 4px;
     }
     .wsb-compare-col-label {
-      margin-bottom: 5px;
+      margin-bottom: 8px;
       font-size: 9.8px;
     }
     .wsb-compare-cell {
@@ -4661,7 +4665,7 @@
       background: linear-gradient(90deg, transparent, rgba(29, 63, 214, 0.38) 20%, rgba(124, 58, 237, 0.5) 50%, rgba(29, 63, 214, 0.38) 80%, transparent);
       transform: translate(-50%, -50%);
     }
-    .wsb-compare-cells::after { display: block; }
+    .wsb-compare-cells::after { display: none; }
     .wsb-compare-col {
       padding: 0;
       align-items: center;
@@ -5480,7 +5484,7 @@
   isolation: isolate;
   padding: 88px 24px;
   box-sizing: border-box;
-  background: linear-gradient(160deg, #16257a 0%, #1d3fd6 55%, #2b4de0 100%);
+  background: linear-gradient(160deg, #0c1024 0%, #101c44 45%, #16257a 100%);
   color: var(--wsb-tinta);
   font-family: var(--wsb-fonte);
 }
@@ -6752,7 +6756,7 @@
         <span class="wff-logo">Andreza Teles</span>
 
         <p class="wff-tagline">
-          Consultoria, mentorias e treinamentos para transformar carreiras, líderes e negócios.
+          Consultoría, asesoría, mentoría, palestras e treinamentos para potencializar carreiras, líderes de negocios.
         </p>
 
         <div class="wff-social">
@@ -6833,7 +6837,7 @@
     </div>
 
     <div class="wff-bottom">
-      <p class="wff-copy">© 2026 Andreza Teles Consultoria. Todos os direitos reservados.</p>
+      <p class="wff-copy">© 2026 Andreza Teles Gestão e Negócios. Todos os direitos reservados.</p>
       <a href="https://wa.me/5583987770328"
       class="wff-credit"
       > Desenvolvido por Mateus Aguiar

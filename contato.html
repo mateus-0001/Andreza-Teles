@@ -36,9 +36,11 @@
   --wdh-fonte: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   --wdh-fonte-serif: "Playfair Display", Georgia, serif;
 
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 5;
   padding: 20px 24px 0;
   box-sizing: border-box;
   font-family: var(--wdh-fonte);
@@ -645,9 +647,9 @@
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  padding: 72px 24px 56px;
+  padding: 184px 24px 56px;
   background:
-    linear-gradient(180deg, #ffffff 0%, #f8faff 58%, #fbfcff 100%);
+    linear-gradient(150deg, #0d1533 0%, #12224f 55%, #0c1230 100%);
   color: var(--wct-tinta);
   font-family: var(--wct-fonte);
   box-sizing: border-box;
@@ -668,7 +670,7 @@
   z-index: 0;
   pointer-events: none;
   background-image:
-    radial-gradient(rgba(29,63,214,.10) 1px, transparent 1px);
+    radial-gradient(rgba(255,255,255,.09) 1px, transparent 1px);
   background-size: 26px 26px;
   -webkit-mask-image:
     radial-gradient(ellipse 78% 66% at 50% 28%, #000 30%, transparent 88%);
@@ -872,6 +874,11 @@
   text-wrap: pretty;
 }
 
+.wct-hero .wct-eyebrow { color: #9db2ff; }
+.wct-hero-title { color: #fff; }
+.wct-hero-title em { color: #9db2ff; }
+.wct-hero-desc { color: #c7cede; }
+
 .wct-item-in-down {
   animation: wct-item-enter-down .88s cubic-bezier(.16,1,.3,1) var(--wct-delay,0ms) both !important;
 }
@@ -953,7 +960,7 @@
 
 @media (max-width:599px) {
   .wct-hero {
-    padding: 48px 20px 40px;
+    padding: 120px 20px 40px;
   }
 }
 
@@ -2323,7 +2330,7 @@
   isolation: isolate;
   padding: 80px 24px;
   background:
-    linear-gradient(180deg, #fbfcff 0%, #f5f8ff 54%, #fbfcff 100%);
+    linear-gradient(180deg, #0d1330 0%, #0f1730 55%, #0c1024 100%);
   color: var(--wct-tinta);
   font-family: var(--wct-fonte);
   box-sizing: border-box;
@@ -2344,7 +2351,7 @@
   z-index: 0;
   pointer-events: none;
   background-image:
-    radial-gradient(rgba(29,63,214,.085) 1px, transparent 1px);
+    radial-gradient(rgba(255,255,255,.08) 1px, transparent 1px);
   background-size: 28px 28px;
   -webkit-mask-image:
     radial-gradient(ellipse 82% 72% at 50% 40%, #000 24%, transparent 88%);
@@ -2527,6 +2534,10 @@
   line-height: 1.62;
   text-wrap: pretty;
 }
+
+.wct-form-section .wct-eyebrow { color: #9db2ff; }
+.wct-form-title { color: #fff; }
+.wct-form-desc { color: #c7cede; }
 
 .wct-form {
   position: relative;
@@ -3718,7 +3729,7 @@
         <span class="wff-logo">Andreza Teles</span>
 
         <p class="wff-tagline">
-          Consultoria, mentorias e treinamentos para transformar carreiras, líderes e negócios.
+          Consultoría, asesoría, mentoría, palestras e treinamentos para potencializar carreiras, líderes de negocios.
         </p>
 
         <div class="wff-social">
@@ -3799,7 +3810,7 @@
     </div>
 
     <div class="wff-bottom">
-      <p class="wff-copy">© 2026 Andreza Teles Consultoria. Todos os direitos reservados.</p>
+      <p class="wff-copy">© 2026 Andreza Teles Gestão e Negócios. Todos os direitos reservados.</p>
       <a href="https://wa.me/5583987770328"
       class="wff-credit"
       > Desenvolvido por Mateus Aguiar

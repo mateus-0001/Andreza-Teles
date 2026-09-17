@@ -36,9 +36,11 @@
   --wdh-fonte: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   --wdh-fonte-serif: "Playfair Display", Georgia, serif;
 
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 5;
   padding: 20px 24px 0;
   box-sizing: border-box;
   font-family: var(--wdh-fonte);
@@ -647,10 +649,10 @@
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  padding: 96px 24px 68px;
-  border-bottom: 1px solid rgba(29,63,214,.08);
+  padding: 196px 24px 68px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
   background:
-    linear-gradient(180deg, #ffffff 0%, #f7f9ff 58%, #fbfcff 100%);
+    linear-gradient(180deg, #0c1024 0%, #101c44 100%);
   color: var(--wcu-tinta);
   font-family: var(--wcu-fonte);
   box-sizing: border-box;
@@ -806,6 +808,12 @@
   line-height: 1.68;
   text-wrap: pretty;
 }
+
+.wcu-head .wcu-badge { color: #8ba4f9; }
+.wcu-head .wcu-badge-line { background: #8ba4f9; }
+.wcu-head-title { color: #fff; }
+.wcu-head-title em { color: #9db2ff; }
+.wcu-head .wcu-head-desc { color: #c7cede; }
 
 .wcu-quick-links {
   display: flex;
@@ -1025,7 +1033,7 @@
 
 @media (max-width:599px) {
   .wcu-head {
-    padding: 64px 20px 44px;
+    padding: 130px 20px 44px;
   }
 
   .wcu-quick-links {
@@ -1470,11 +1478,11 @@
   isolation: isolate;
   padding: 82px 24px;
   scroll-margin-top: 110px;
-  border-bottom: 1px solid rgba(29,63,214,.08);
+  border-bottom: 1px solid rgba(255,255,255,.08);
   background:
-    radial-gradient(circle at 90% 12%, rgba(29,63,214,.08), transparent 28%),
-    radial-gradient(circle at 8% 86%, rgba(22,163,74,.055), transparent 26%),
-    linear-gradient(165deg, #eef3ff 0%, #e6edff 100%);
+    radial-gradient(circle at 90% 12%, rgba(109,139,255,.14), transparent 32%),
+    radial-gradient(circle at 8% 86%, rgba(22,163,74,.10), transparent 30%),
+    linear-gradient(165deg, #0d1533 0%, #12224f 100%);
   color: var(--wcu-tinta);
   font-family: var(--wcu-fonte);
   box-sizing: border-box;
@@ -1730,6 +1738,13 @@
   color: var(--wcu-acento);
   filter: drop-shadow(0 3px 7px rgba(29,63,214,.15));
 }
+
+.wcu-partner .wcu-badge { color: #8ba4f9; }
+.wcu-partner .wcu-badge-line { background: #8ba4f9; }
+.wcu-partner-title { color: #fff; }
+.wcu-partner-title em { color: #9db2ff; }
+.wcu-partner-desc { color: #c7cede; }
+.wcu-partner-list li { color: #e4e8f5; }
 
 .wcu-partner .wcu-cta-btn {
   position: relative;
@@ -2223,7 +2238,7 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          Mensalidades a partir de R$ 149
+          Mensalidades acessíveis
         </li>
 
         <li>
@@ -2638,7 +2653,7 @@
     </div>
 
     <p class="wcu-catalog-meta wcu-reveal">
-      <span id="wcu-meta-text">A partir de R$ 149/mês · Conclua a partir de 18 meses</span>
+      <span id="wcu-meta-text">Mensalidades acessíveis · Conclua a partir de 18 meses</span>
       <span class="wcu-catalog-count"><span id="wcu-count">17</span> cursos</span>
     </p>
 
@@ -2852,7 +2867,7 @@
     overflow: hidden;
     isolation: isolate;
     background:
-      linear-gradient(180deg, #ffffff 0%, #f9fbff 52%, #ffffff 100%);
+      linear-gradient(180deg, #0a0e22 0%, #10193a 60%, #0c1024 100%);
     padding: 80px 24px;
   }
 
@@ -3173,9 +3188,9 @@
   }
 
   .wcu-course-chip:hover {
-    background: rgba(29, 63, 214, 0.08);
-    border-color: var(--wcu-acento);
-    color: var(--wcu-acento);
+    background: rgba(109, 139, 255, 0.12);
+    border-color: #6d8bff;
+    color: #6d8bff;
     transform: translateY(-2px);
   }
 
@@ -3191,15 +3206,15 @@
     font-family: var(--wcu-fonte);
     font-size: 13.5px;
     font-weight: 700;
-    color: var(--wcu-acento);
+    color: #6d8bff;
     cursor: pointer;
     transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
   }
 
   .wcu-more-btn:hover {
-    background: rgba(29, 63, 214, 0.06);
-    border-color: var(--wcu-acento);
-    color: #1D3FD6;
+    background: rgba(109, 139, 255, 0.10);
+    border-color: #6d8bff;
+    color: #8ba4f9;
   }
 
   .wcu-more-btn svg {
@@ -3233,6 +3248,22 @@
     color: var(--wcu-cinza);
     max-width: 380px;
   }
+
+  .wcu-catalog .wcu-badge { color: #8ba4f9; }
+  .wcu-catalog .wcu-badge-line { background: #8ba4f9; }
+  .wcu-catalog-title { color: #fff; }
+  .wcu-catalog-title em { color: #9db2ff; }
+  .wcu-catalog-desc { color: #c7cede; }
+  .wcu-tabs { border-bottom-color: rgba(255,255,255,.16); }
+  .wcu-tab { color: #a7b0cc; }
+  .wcu-tab:hover { color: #fff; }
+  .wcu-tab-active { color: #9db2ff; }
+  .wcu-tab-indicator { background: #9db2ff; }
+  .wcu-catalog-meta { color: #a7b0cc; border-bottom-color: rgba(255,255,255,.14); }
+  .wcu-catalog-count { color: #9db2ff; }
+  .wcu-no-results { color: #a7b0cc; }
+  .wcu-catalog-cta { border-top-color: rgba(255,255,255,.14); }
+  .wcu-catalog-cta-text { color: #c7cede; }
 
   @media (max-width: 767px) {
     .wcu-catalog-cta {
@@ -3523,9 +3554,9 @@
     var expanded = false;
 
     var metaByCategory = {
-      tecnologos: 'A partir de R$ 149/mês · Conclua a partir de 18 meses',
-      licenciaturas: 'A partir de R$ 149/mês · Conclua a partir de 3 anos',
-      bacharelados: 'A partir de R$ 149/mês · Conclua a partir de 3 anos'
+      tecnologos: 'Mensalidades acessíveis · Conclua a partir de 18 meses',
+      licenciaturas: 'Mensalidades acessíveis · Conclua a partir de 3 anos',
+      bacharelados: 'Mensalidades acessíveis · Conclua a partir de 3 anos'
     };
     var activeCategory = 'tecnologos';
 
@@ -4065,9 +4096,9 @@
   isolation: isolate;
   padding: 48px 24px;
   scroll-margin-top: 110px;
-  border-top: 1px solid var(--wcu-linha);
-  border-bottom: 1px solid var(--wcu-linha);
-  background: linear-gradient(165deg, #eaf0fe 0%, #dfe8fd 100%);
+  border-top: 1px solid rgba(255,255,255,.08);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  background: linear-gradient(165deg, #101c44 0%, #16225a 100%);
   color: var(--wcu-tinta);
   font-family: var(--wcu-fonte);
   box-sizing: border-box;
@@ -4218,6 +4249,11 @@
   line-height: 1.55;
   text-wrap: pretty;
 }
+
+.wcu-own-text .wcu-badge { color: #9db2ff; }
+.wcu-own-text .wcu-badge-line { background: #9db2ff; }
+.wcu-own-title { color: #fff; }
+.wcu-own-desc { color: #c7cede; }
 
 .wcu-btn-label {
   position: relative;
@@ -4857,7 +4893,7 @@
   overflow: hidden;
   isolation: isolate;
   padding: 64px 24px;
-  background: linear-gradient(155deg, #2547de 0%, #1d3fd6 55%, #1834ad 100%);
+  background: linear-gradient(155deg, #0c1024 0%, #101c44 45%, #16257a 100%);
   color: var(--wcu-tinta);
   font-family: var(--wcu-fonte);
   box-sizing: border-box;
@@ -5266,8 +5302,8 @@
     <div class="wcu-stat-divider" aria-hidden="true"></div>
 
     <div class="wcu-stat">
-      <p class="wcu-stat-number">R$149</p>
-      <p class="wcu-stat-label">mensalidade a partir de</p>
+      <p class="wcu-stat-number">Acessível</p>
+      <p class="wcu-stat-label">mensalidade facilitada</p>
     </div>
   </div>
 </section>
@@ -5684,7 +5720,7 @@
   isolation: isolate;
   padding: 80px 24px 88px;
   background:
-    linear-gradient(180deg, #fbfcff 0%, #f6f8ff 55%, #fbfcff 100%);
+    linear-gradient(180deg, #0d1330 0%, #0f1730 55%, #0c1024 100%);
   color: var(--wcu-tinta);
   font-family: var(--wcu-fonte);
   box-sizing: border-box;
@@ -5865,6 +5901,10 @@
   line-height: 1.3;
   text-wrap: balance;
 }
+
+.wcu-process-head .wcu-badge { color: #8ba4f9; }
+.wcu-process-head .wcu-badge-line { background: #8ba4f9; }
+.wcu-process-title { color: #fff; }
 
 .wcu-process-grid {
   position: relative;
@@ -6996,7 +7036,7 @@
         <span class="wff-logo">Andreza Teles</span>
 
         <p class="wff-tagline">
-          Consultoria, mentorias e treinamentos para transformar carreiras, líderes e negócios.
+          Consultoría, asesoría, mentoría, palestras e treinamentos para potencializar carreiras, líderes de negocios.
         </p>
 
         <div class="wff-social">
@@ -7077,7 +7117,7 @@
     </div>
 
     <div class="wff-bottom">
-      <p class="wff-copy">© 2026 Andreza Teles Consultoria. Todos os direitos reservados.</p>
+      <p class="wff-copy">© 2026 Andreza Teles Gestão e Negócios. Todos os direitos reservados.</p>
       <a href="https://wa.me/5583987770328"
       class="wff-credit"
       > Desenvolvido por Mateus Aguiar

@@ -647,9 +647,10 @@
   position: relative;
   box-sizing: border-box;
   font-family: var(--wdh-fonte);
+  /* TROCAR AQUI: link da imagem de fundo do hero (aparece atrás do menu também) */
   background-image:
     linear-gradient(180deg, rgba(255,255,255,.28) 0%, rgba(255,255,255,.12) 45%, rgba(255,255,255,.30) 100%),
-    url("Assets/banner-desktop.webp");
+    url("https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=1800&q=80");
   background-size: cover;
   background-position: center 32%;
   background-repeat: no-repeat;
@@ -6616,63 +6617,88 @@ and
 })();
 </script>
 
-<!-- ===================== 6. AVISO — REVIEWS (Trust Index) ===================== -->
+<!-- ===================== 6. AVALIAÇÕES (Google Reviews) ===================== -->
 <style>
-.wtr-section {
+.wrv-section {
   position: relative;
-  padding: 56px 24px;
+  overflow: hidden;
+  isolation: isolate;
+  padding: 72px 24px;
   box-sizing: border-box;
   background: #fafbfe;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
 }
-.wtr-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  max-width: 720px;
+.wrv-section *,
+.wrv-section *::before,
+.wrv-section *::after {
+  box-sizing: border-box;
+}
+.wrv-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 22px 28px;
-  border: 1px solid #e9ecf5;
-  border-radius: 16px;
-  background: #fff;
-  box-shadow: 0 4px 20px rgba(10,25,70,.06);
+}
+.wrv-head {
+  max-width: 640px;
+  margin: 0 auto 36px;
   text-align: center;
 }
-.wtr-icon {
-  display: flex;
+.wrv-badge {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-  border-radius: 50%;
-  background: rgba(29,63,214,.10);
+  gap: 10px;
+  margin-bottom: 16px;
   color: #1d3fd6;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .1em;
 }
-.wtr-text {
-  color: #4b4d57;
-  font-size: 14.5px;
-  line-height: 1.55;
+.wrv-badge-line {
+  display: inline-block;
+  width: 22px;
+  height: 1px;
+  background: #1d3fd6;
+  opacity: .5;
 }
-.wtr-text strong {
+.wrv-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(24px, 2.8vw, 32px);
+  font-weight: 400;
+  line-height: 1.3;
   color: #14151a;
 }
+.wrv-title em {
+  font-style: italic;
+  color: #1d3fd6;
+}
+.wrv-widget-wrap {
+  position: relative;
+  min-height: 220px;
+}
 @media (max-width: 599px) {
-  .wtr-section { padding: 40px 20px; }
-  .wtr-box { flex-direction: column; padding: 24px 20px; gap: 12px; }
+  .wrv-section { padding: 48px 20px; }
+  .wrv-head { margin-bottom: 26px; }
 }
 </style>
-<section class="wtr-section" aria-label="Avaliações">
-  <div class="wtr-box">
-    <div class="wtr-icon">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M12 17.3l-5.4 3.2 1.4-6-4.6-4 6.1-.5L12 4l2.5 6 6.1.5-4.6 4 1.4 6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-      </svg>
+<section class="wrv-section" aria-label="Avaliações">
+  <div class="wrv-container">
+    <div class="wrv-head">
+      <span class="wrv-badge">
+        <span class="wrv-badge-line"></span>
+        AVALIAÇÕES
+        <span class="wrv-badge-line"></span>
+      </span>
+      <h2 class="wrv-title">
+        Quem já trabalhou comigo, <em>conta como foi</em>.
+      </h2>
     </div>
-    <p class="wtr-text">
-      <strong>Avaliações verificadas em breve.</strong> Esta seção vai exibir os depoimentos reais de clientes assim que o widget de avaliações for integrado.
-    </p>
+    <div class="wrv-widget-wrap">
+      <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="elfsight-app-af63e2f0-8769-4b1d-aee0-c51166bb717d" data-elfsight-app-lazy></div>
+    </div>
   </div>
 </section>
 

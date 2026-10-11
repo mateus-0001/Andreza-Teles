@@ -685,6 +685,12 @@
   will-change: transform;
 }
 
+/* Reserved area below the text, used on mobile to show the banner's
+   photo without any content overlapping it. Hidden on desktop/tablet. */
+.wdh-photo-space {
+  display: none;
+}
+
 .wdh-badge,
 .wdh-title,
 .wdh-desc,
@@ -981,16 +987,39 @@
 }
 
 @media (max-width: 767px) {
+  .wdh-section {
+    display: flex;
+    flex-direction: column;
+    /* Matches Assets/Banner-mobile.webp's own proportions (862 x 1694),
+       so the full photo shows without being cropped. */
+    aspect-ratio: 862 / 1694;
+    background-image:
+      linear-gradient(180deg, rgba(255,255,255,.58) 0%, rgba(255,255,255,.22) 30%, rgba(255,255,255,0) 52%, rgba(255,255,255,0) 100%),
+      url(Assets/Banner-mobile.webp);
+    background-size: cover;
+    background-position: center top;
+  }
+
   .wdh-container {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     min-height: auto;
+  }
+
+  /* Fills whatever vertical space the text block doesn't use, so the
+     lower part of the mobile banner (her photo) stays fully visible
+     and nothing sits over her face. */
+  .wdh-photo-space {
+    display: block;
+    flex: 1 1 auto;
+    min-height: 90px;
   }
 
   .wdh-content {
     order: 1;
     width: 100%;
-    padding: 118px 24px 32px;
+    padding: 118px 24px 24px;
     text-align: center;
   }
 
@@ -1138,6 +1167,9 @@
     </div>
 
   </div>
+
+  <div class="wdh-photo-space" aria-hidden="true"></div>
+
 </section>
 
 <noscript>

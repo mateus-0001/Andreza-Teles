@@ -685,8 +685,8 @@
   will-change: transform;
 }
 
-/* Reserved area below the text, used on mobile to show the banner's
-   photo without any content overlapping it. Hidden on desktop/tablet. */
+/* Espaço reservado abaixo do texto, usado no mobile para mostrar a foto
+   do banner sem nenhum conteúdo por cima. Oculto no desktop e no tablet. */
 .wdh-photo-space {
   display: none;
 }
@@ -994,9 +994,9 @@
       linear-gradient(180deg, rgba(255,255,255,.58) 0%, rgba(255,255,255,.22) 30%, rgba(255,255,255,0) 52%, rgba(255,255,255,0) 100%),
       url(Assets/Banner-mobile.webp);
     background-size: cover;
-    /* Anchored to the BOTTOM of the image on purpose: whatever height this
-       section ends up being, the crop always keeps her in frame at the
-       bottom, instead of showing the blank top of the photo. */
+    /* Ancorada na PARTE DE BAIXO da imagem de propósito: seja qual for a
+       altura da seção, o corte sempre mantém ela enquadrada embaixo,
+       em vez de mostrar o topo vazio da foto. */
     background-position: center bottom;
   }
 
@@ -1007,15 +1007,17 @@
     min-height: auto;
   }
 
-  /* A fixed strip reserved below the text so her photo always has real,
-     guaranteed room — independent of how tall the text block gets. */
+  /* Faixa reservada abaixo do texto para a foto dela ter espaço garantido,
+     independente da altura do bloco de texto.
+     Para empurrar a foto mais para baixo, aumente height, min-height e
+     max-height (o max-height é o teto que costuma limitar o ajuste). */
   .wdh-photo-space {
     display: block;
     flex: 0 0 auto;
     width: 100%;
-    height: 62vw;
-    min-height: 210px;
-    max-height: 340px;
+    height: 82vw;
+    min-height: 270px;
+    max-height: 450px;
   }
 
   .wdh-content {
